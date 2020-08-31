@@ -7,11 +7,12 @@ import {pageLinks} from './pageMetaData';
 
 export default function App(props){
 	const location = useLocation();
+	console.log(location);
 
 	return (
 	<>
 			<Header links={pageLinks} logoUrl="static/img/logo.jpg"/>
-			<RouterBreadCrumb pathname={location.pathname}/>
+			<RouterBreadCrumb pathname={location.pathname} startingIndex={2}/>
 			<div className='app-view-area'>
 				<Routes links={pageLinks}/>
 			</div>

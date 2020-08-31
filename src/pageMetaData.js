@@ -1,17 +1,17 @@
 const pageLinks = [
 	{
 		title: 'Home',
-		link: '/',
+		link: '/community',
 		importPath: 'home'
 	},
 	{
 		title: 'About Us',
-		link: '/aboutus',
+		link: '/community/aboutus',
 		importPath: 'about'
 	},
 	{
 		title: 'Contact',
-		link: '/contact',
+		link: '/community/contact',
 		importPath: 'contact'
 	}
 ];

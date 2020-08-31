@@ -4,11 +4,13 @@ import {RouteUl, RouteLi} from "./styledElement";
 
 
 export default function RouterBreadCrumb(props){
+	const {startingIndex} = props;
 	let location = useLocation();
 	const {pathname} = location;
 	const paths = [];
 	pathname.split('/').map((p, i, arr) => {
 		if(!p ) return;
+		if(i < startingIndex) return;
 
 		p = p[0].toUpperCase() + p.slice(1)
 
