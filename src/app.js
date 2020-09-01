@@ -7,7 +7,6 @@ import {pageLinks} from './pageMetaData';
 
 export default function App(props){
 	const location = useLocation();
-	console.log(location);
 
 	return (
 	<>

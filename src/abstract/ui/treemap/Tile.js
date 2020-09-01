@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function TreeNode(props){
-	const { node, xScale, yScale, colorScale, onClick, imageGetter, isActive} = props;
+	const { node, xScale, yScale, colorScale, onClick, imageGetter, isActive , showLabel} = props;
 
 	const { x0, y0, x1, y1, data} = node;
 	const {name} = data;
@@ -22,7 +22,10 @@ export default function TreeNode(props){
 		top: yPos,
 		backgroundColor: !imageGetter ? colorValue : 'none',
 		width: nodeWidth,
-		height: nodeHeight
+		height: nodeHeight,
+		zIndex: !imageGetter ? 1 : 2,
+		cursor: 'pointer',
+
 	};
 	let imageUI = null;
 	if(imageGetter){
@@ -35,8 +38,7 @@ export default function TreeNode(props){
 				top: yPos,
 				width: nodeWidth,
 				height: nodeHeight,
-				objectFit: 'cover',
-				zIndex: 1
+				objectFit: 'cover'
 			};
 
 			const overlayStyle =  {
@@ -45,14 +47,14 @@ export default function TreeNode(props){
 				top: yPos,
 				width: nodeWidth,
 				height: nodeHeight,
-				zIndex: 2,
 				background: '#602a24',
 				opacity: isActive ? '35%' : '80%',
-				cursor: 'pointer'
+				cursor: 'pointer',
+				zIndex: 1
 			};
 
 			imageUI = [
-				<div key='tile-overlay' onClick={onClick} style={overlayStyle}></div>,
+				<div key='tile-overlay' style={overlayStyle}></div>,
 				<img key='tile-image' style={imgStyle} src={imageURL} />
 			]
 		}
@@ -70,11 +72,11 @@ export default function TreeNode(props){
 	};
 
 	return <>
-		{imageUI}
-		<div key='tile' style={nodeStyle} onClick={!imageUI ? onClick : null}>
+		<div key='tile' style={nodeStyle} onClick={onClick}>
 			<div style={nodeContentStyle} >
-				<label style={labelStyle}>{name}</label>
+				{ showLabel ? <label style={labelStyle}>{name}</label> : null}
 			</div>
 		</div>
+		{imageUI}
 	</>;
 }

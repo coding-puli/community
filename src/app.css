@@ -23,10 +23,17 @@ body {
 
 }
 
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 100; /* this is optional and should be different for every project */
+}
+
 .header {
   padding: 4px;
   display: flex;
   align-items: center;
+  background: #fdf8f2;
 }
 
 .header h2{
@@ -72,7 +79,7 @@ body {
   font: 18px 'Open Sans',sans-serif;
   font-weight: 800;
   padding: 6px 12px 6px 12px;
-  margin: 0 0.75rem;
+  margin: 0 0.45rem;
 }
 
 .nav-link-active{

@@ -21,7 +21,6 @@ function nearestEvent(events) {
 			nearestDateIndex = index
 		}
 	});
-	console.log('nearestEvent ', events[nearestDateIndex]);
 	return events[nearestDateIndex];
 }
 

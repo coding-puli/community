@@ -4,7 +4,7 @@ import {getFormattedDate} from "components/events/helper";
 
 export default function EventDescription(props){
 	const {event} = props;
-	const {eventId, name, description, category, place, start_time} = event;
+	const {id:eventId, name, description, category, place, start_time} = event;
 	const {date, day, month, year} = getFormattedDate(start_time)
 
 	let placeUI = null;

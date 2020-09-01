@@ -3,8 +3,6 @@ import './style.css';
 import EventImageLayover from './ImageLayover';
 import EventDescription from './EventDescription';
 
-
-
 export default function Event(props) {
 
 	const {data, onClick} = props;

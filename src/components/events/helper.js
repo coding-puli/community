@@ -24,7 +24,7 @@ monthArray[11] = "Dec";
 function getFormattedDate(dateAsString){
 	const dateObject = new Date(dateAsString);
 	const day = weekdayArray[dateObject.getDay()];
-	const month = monthArray[dateObject.getDay()];
+	const month = monthArray[dateObject.getMonth()];
 	const date =  dateObject.getDate();
 	const year =  dateObject.getFullYear();
 

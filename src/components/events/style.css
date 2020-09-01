@@ -27,6 +27,7 @@
 .events-container {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
 }
 
 .tree-map{
@@ -94,6 +95,11 @@
   font-size: 12px;
 }
 
+.event-year{
+  font-weight: 200;
+  font-size: 14px;
+}
+
 .events-link{
   padding-left: 0px;
   padding-right: 0px;
@@ -102,15 +108,6 @@
   border: 2px none #f0ad5f;
   border-bottom-style: solid;
   cursor: pointer
-}
-
-
-.event-date-date{
-
-}
-
-.event-month{
-
 }
 
 .event-description{
@@ -133,6 +130,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  margin-top: 32px;
 }
 
 .event-location{

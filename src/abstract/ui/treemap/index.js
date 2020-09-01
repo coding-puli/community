@@ -8,7 +8,7 @@ import './style.css';
 
 
 export default function TreeMap(props){
-	const {data, width = 500, height = 500,sumIterator, onTileClick, imageGetter, activeId} = props;
+	const {data, width = 500, height = 500,sumIterator, onTileClick, imageGetter, activeId, showLabel = false} = props;
 
 	/* Hooks */
 	const [rootNode, setRootNode] = useState(null);
@@ -42,6 +42,7 @@ export default function TreeMap(props){
 	if (nodes && nodes.length > 0) {
 		nodesUI = nodes.map((childNode , index)=>{
 			return <Tile key={index} node={childNode}
+									 showLabel={showLabel}
 									 isActive={activeId == childNode.data.id}
 									 imageGetter={imageGetter}
 									 onClick={()=>onTileClick(childNode.data)}

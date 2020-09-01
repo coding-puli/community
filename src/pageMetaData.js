@@ -10,6 +10,11 @@ const pageLinks = [
 		importPath: 'about'
 	},
 	{
+		title: 'Gallery',
+		link: '/community/gallery',
+		importPath: 'gallery'
+	},
+	{
 		title: 'Contact',
 		link: '/community/contact',
 		importPath: 'contact'
