@@ -11,7 +11,7 @@ export default function App(props){
 	return (
 	<>
 			<Header links={pageLinks} logoUrl="static/img/logo.jpg"/>
-			<RouterBreadCrumb pathname={location.pathname} startingIndex={2}/>
+			{/*<RouterBreadCrumb pathname={location.pathname} startingIndex={2}/>*/}
 			<div className='app-view-area'>
 				<Routes links={pageLinks}/>
 			</div>
