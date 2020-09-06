@@ -1,23 +1,55 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:600');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:700');
-@import url('https://fonts.googleapis.com/css?family=Oswald');
+/*@import url('static/fonts/mutant-bamboo.regular.ttf');*/
 
-body {
-  font-family:"Open Sans", sans-serif;
+@font-face {
+  font-family: "south afirkas 2100";
+  font-style: normal;
+  font-weight: normal;
+  src: url('static/fonts/southafirkas2100.ttf') format("truetype")
+}
+
+@font-face {
+  font-family: "OutOfAfrica";
+  font-style: normal;
+  font-weight: normal;
+  src: url('static/fonts/OutOfAfrica.ttf') format("truetype")
+}
+
+@font-face {
+  font-family: "TajamukaScript";
+  font-style: normal;
+  font-weight: normal;
+  src: url('static/fonts/TajamukaScript.ttf') format("truetype")
+}
+
+html, body  {
   color: #3f3f3f;
   margin: 0;
-  background: #FDF8F2;
+  background: #77958d;
 }
+
+/*
+
+Color theme Palette 1
+#8e7176
+#e8b238
+#ecabb6
+#89241e
+
+Color theme Palette 2
+#6f968D
+#07494D
+#D5949E
+#e9634d
+
+*/
+
 
 /* To create fixed header*/
 .app {
   height: 100vh;
   display: flex;
   flex-direction: column;
-}
+  }
 
 .app-view-area {
 
@@ -26,19 +58,33 @@ body {
 .sticky {
   position: sticky;
   top: 0;
-  z-index: 100; /* this is optional and should be different for every project */
+  z-index: 1; /* this is optional and should be different for every project */
+}
+
+.fixed-img{
+  position: fixed;
+  top: 64px;
+  right: 4px;
+  z-index: 2;
 }
 
 .header {
+  font-family: "OutOfAfrica";
   padding: 4px;
   display: flex;
   align-items: center;
-  background: #fdf8f2;
+  /*background: #fdf8f2;*/
+}
+
+.header-sticky {
+  background: #f9e8eb;
+  position: sticky;
+  top: 0;
 }
 
 .header h2{
   margin-left: 24px;
-  color: #602a24;
+  color: #1f4e51;
 }
 
 .social-media {
@@ -53,13 +99,13 @@ body {
 .logo{
   height: 100px;
   width: 100px;
-  border: 4px solid #602a24;
+  border: 4px solid #db6c55;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: bolder;
-  color: #602a24;
+  color: #1e4d4f;
   margin-left: 8px;
   margin-top: 2px;
 
@@ -75,20 +121,20 @@ body {
 }
 
 .nav-link {
-  color: #605458;
-  font: 18px 'Open Sans',sans-serif;
+  color: #75958d;
+  font-size: 18px;
   font-weight: 800;
   padding: 6px 12px 6px 12px;
   margin: 0 0.45rem;
 }
 
 .nav-link-active{
-  color: #602a24;
-  font: 18px 'Open Sans',sans-serif;
-  font-weight: 800;
+  color: #1e4d4f;
+  font-size: 24px;
+  font-weight: bolder;
   padding: 6px 12px 6px 12px;
   margin: 0 0.75rem;
-  border: 2px none #f0ad5f;
+  border: 2px none #db6c55;
   border-bottom-style: solid;
 }
 
@@ -97,8 +143,9 @@ body {
 }
 
 .nav-link a:hover {
-  border: 2px none #f0ad5f;
+  border: 2px none #f3d9ca;
   border-bottom-style: solid;
+  color: #1e4d4f;
 }
 
 
@@ -106,7 +153,6 @@ body {
 .route-breadcrumps {
   font-weight: 400 !important;
   font-size: 20px;
-  font-family: 'Gnuolane',Oswald,sans-serif !important;
 }
 
 .route-breadcrumps-item {

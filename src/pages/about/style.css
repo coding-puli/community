@@ -1,4 +1,10 @@
 .about{
   padding: 32px;
-  color: #602a24;
+  color: #f8e8eb;
+  display: flex;
+  letter-spacing: 1px;
+  font-family: 'TajamukaScript';
 }
+
+
+

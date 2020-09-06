@@ -38,11 +38,7 @@ export default function Events(props){
 
 	const eventToRender = activeData ? activeData : nearestEvent;
 
-	const style = {
-		color: '#602a24',
-		position: 'absolute',
-		top: '-48px'
-	};
+
 
 	const relativeStyle = {
 		position: 'relative',
@@ -50,7 +46,6 @@ export default function Events(props){
 	return (
 		<div className='events-container'>
 			<div style={relativeStyle}>
-				<h3 style={style}>Events</h3>
 				<TreeMap data={treeData} onTileClick={tileClickHandler}
 								 activeId={eventToRender.id}
 								 width={640}

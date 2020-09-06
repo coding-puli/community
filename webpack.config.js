@@ -38,6 +38,18 @@ const config = {
 						skipEmptyLines: true
 					}
 				}
+			},
+			{
+				test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+				use: [
+					{
+						loader: 'file-loader',
+						options: {
+							name: '[name].[ext]',
+							outputPath: 'fonts/'
+						}
+					}
+				]
 			}
 		]
 
@@ -49,14 +61,14 @@ const config = {
 			'components': path.resolve(__dirname,'src/components/'),
 			'ui': path.resolve(__dirname,'src/ui/'),
 			'context': path.resolve(__dirname,'src/context/'),
-			'static': path.resolve(__dirname,'static/'),
+			'static': path.resolve(__dirname,'src/static/'),
 			'abstract': path.resolve(__dirname,'src/abstract/'),
 			'pages': path.resolve(__dirname,'src/pages/'),
 			'service': path.resolve(__dirname,'src/service/'),
 		}
 	},
 	devServer: {
-		contentBase: path.join(__dirname, '/'),
+		contentBase: path.join(__dirname, '/src'),
 		compress: true,
 	},
 	devtool: 'inline-source-map'

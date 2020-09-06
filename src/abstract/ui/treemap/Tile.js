@@ -47,7 +47,7 @@ export default function TreeNode(props){
 				top: yPos,
 				width: nodeWidth,
 				height: nodeHeight,
-				background: '#602a24',
+				background: '#627d75',
 				opacity: isActive ? '35%' : '80%',
 				cursor: 'pointer',
 				zIndex: 1

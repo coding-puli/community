@@ -19,7 +19,7 @@
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background: #602a24;
+  background: #627d75;
   opacity: 60%;
   z-index: 1;
 }
@@ -28,6 +28,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  margin-top: 64px;
 }
 
 .tree-map{
@@ -76,8 +77,8 @@
 .event-date {
   display: flex;
   flex-direction: column;
-  color: #602a24;
-  border: 1px solid #602a24;
+  color: #ffbac7;
+  border: 1px solid #ffbac7;
   border-radius: 8px;
   padding: 8px 16px 8px 16px;
   align-items: center;
@@ -104,7 +105,7 @@
   padding-left: 0px;
   padding-right: 0px;
   padding-bottom: 2px;
-  color: #602a25;
+  color: #ffbac7;
   border: 2px none #f0ad5f;
   border-bottom-style: solid;
   cursor: pointer
@@ -117,11 +118,11 @@
 }
 
 .event-name{
-  color: #602a24;
+  color: #ffbac7;
 }
 
 .event-summary{
-  color: #602a24;
+  color: #ffbac7;
   font-weight: 400;
   font-size: 14px;
 }
@@ -134,7 +135,7 @@
 }
 
 .event-location{
-  color: #602a24;
+  color: #f9e8eb;
   font-weight: 400;
   position: relative;
   font-size: 12px;
@@ -147,16 +148,16 @@
 }
 
 .event-url{
-  border: 1px solid #602a24;
+  border: 1px solid #f9e8eb;
   padding: 16px;
-  color: #602a24;
+  color: #ffbac7;
   font-weight: 600;
 }
 
 .event-read-more{
   cursor: pointer;
   text-decoration: none;
-  color: #602a24
+  color: #ffbac7
 }
 
 
@@ -176,7 +177,7 @@
 }
 .location-icon:after {
   content: '';
-  background: #602a24;
+  background: #ffbac7;
   width: 20px;
   height: 20px;
   position: absolute;

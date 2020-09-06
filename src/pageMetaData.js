@@ -1,22 +1,27 @@
 const pageLinks = [
 	{
 		title: 'Home',
-		link: '/community',
+		link: '/home',
 		importPath: 'home'
 	},
 	{
 		title: 'About Us',
-		link: '/community/aboutus',
+		link: '/aboutus',
 		importPath: 'about'
 	},
 	{
+		title: 'Activity',
+		link: '/activity',
+		importPath: 'activity'
+	},
+	{
 		title: 'Gallery',
-		link: '/community/gallery',
+		link: '/gallery',
 		importPath: 'gallery'
 	},
 	{
 		title: 'Contact',
-		link: '/community/contact',
+		link: '/contact',
 		importPath: 'contact'
 	}
 ];

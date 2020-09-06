@@ -1,13 +1,45 @@
-import React from 'react';
+import React, {useRef, useEffect,useState} from 'react';
 
 import './style.css'
 export default function About(props){
+	return (<FixedBackgroundContent/>)
+}
+
+function FixedBackgroundContent(props){
+	const [width, setWidth] = useState(0);
+	const [height, setHeight] = useState(0);
+
+		 function setDimension(event){
+
+		 }
+
+	function setDimension({target:img}) {
+		setWidth(img.offsetWidth);
+		setHeight(img.offsetHeight);
+	}
+
+	const containerStyle = {
+		 	width: width
+	}
+
+	const url = `static/img/drums.png`
+
 	return (
 	<div className='about'>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Leo vel fringilla est ullamcorper eget nulla facilisi etiam. Mi eget mauris pharetra et. Praesent elementum facilisis leo vel fringilla. Blandit libero volutpat sed cras ornare. Felis eget velit aliquet sagittis id consectetur purus ut faucibus. Malesuada pellentesque elit eget gravida cum sociis natoque penatibus. Accumsan in nisl nisi scelerisque eu ultrices vitae auctor. Tincidunt vitae semper quis lectus nulla at. Ornare arcu dui vivamus arcu felis. Neque sodales ut etiam sit amet. Laoreet suspendisse interdum consectetur libero id faucibus nisl.',
-		</p>
-	</div>
+		<div className='about-contents'>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Gravida dictum fusce ut placerat orci nulla pellentesque. Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna. Eu feugiat pretium nibh ipsum consequat nisl vel pretium lectus. Lectus nulla at volutpat diam. Nec nam aliquam sem et tortor consequat id porta. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Lacus luctus accumsan tortor posuere ac ut. Risus nullam eget felis eget nunc lobortis. Arcu bibendum at varius vel pharetra vel turpis nunc eget. Molestie a iaculis at erat pellentesque adipiscing commodo elit at. Magna eget est lorem ipsum dolor sit amet. Nisi porta lorem mollis aliquam ut porttitor leo. Lacus vestibulum sed arcu non odio euismod lacinia at quis. Malesuada proin libero nunc consequat. In mollis nunc sed id semper. Porta non pulvinar neque laoreet. Sit amet consectetur adipiscing elit pellentesque habitant morbi tristique. Aliquam sem fringilla ut morbi tincidunt augue.
+			</p>
+			<p>
+				Imperdiet massa tincidunt nunc pulvinar sapien et. Mi tempus imperdiet nulla malesuada pellentesque elit eget gravida. Nisl vel pretium lectus quam id. Sed faucibus turpis in eu mi bibendum neque. Augue ut lectus arcu bibendum at varius vel pharetra. Sapien eget mi proin sed. Ut tristique et egestas quis ipsum suspendisse. Aliquet eget sit amet tellus cras. Purus semper eget duis at tellus at. Lectus proin nibh nisl condimentum id venenatis a condimentum.
+			</p>
+		</div>
 
+		<div className='about-background-container'>
+			<div className='about-background' style={containerStyle}>
+				<img className='fixed-img' onLoad={setDimension} src={url}/>
+			</div>
+		</div>
+	</div>
 	)
 }
