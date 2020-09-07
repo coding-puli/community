@@ -10,11 +10,17 @@ export default function Header(props){
 		display: 'flex'
 	};
 
+	const wordStyle = {
+		width: "50px"
+	}
 
 	return (
 		<div className='header header-sticky'>
 			<div style={style}>
 				<Logo url={logoUrl}/>
+			</div>
+			<div>
+				<h2 style={wordStyle}>Afro Caribbean Community Association</h2>
 			</div>
 			<NavBar links={links}/>
 		</div>

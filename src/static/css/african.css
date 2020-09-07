@@ -11,7 +11,6 @@ Color theme Palette 2
 #07494D
 #D5949E
 #e9634d
-
 */
 
 
@@ -36,19 +35,24 @@ Color theme Palette 2
   src: url('./../fonts/TajamukaScript.ttf') format("truetype")
 }
 
+/*
+--primary-bg-color-gradient: linear-gradient(90deg, rgb(62, 141, 92) 0%, rgb(30, 140, 78) 29%, rgba(244,246,200,1) 100%);
+  */
+
 :root {
+  --primary-bg-color-gradient: linear-gradient(90deg, rgba(27,121,17,1) 0%, rgba(44,128,59,1) 29%, rgba(244,246,200,1) 100%);
   --primary-bg-color: #77958d;
-  --secondary-bg-color: #f9e8eb;
+  --secondary-bg-color: #d6efc7;
   --tertiary-bg-color: #ff851a;
   --default-bg-color: white;
 
-  --primary-text-color: #1f4e51;
-  --primary-text-color-inactive: #75958d;
+  --primary-text-color: #c05243;
+  --primary-text-color-inactive: #9a675c;
   --secondary-text-color: #d7d7db;
 
-  --title-font-size: 28px;
-  --header-font-size: 24px;
-  --header-font-size-active: 16px;
+  --title-font-size: 24px;
+  --header-font-size: 14px;
+  --header-font-size-active: 18px;
   --scondary-font-size: 14px;
 
   --header-font-weight: 800;

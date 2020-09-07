@@ -26,9 +26,9 @@ SliderItemsDiv.displayName = 'SliderItemsDiv';
 function LeftArrow(props){
 	const {onClick} = props;
 	return (
-	<div className='arrow' onClick={onClick}>
-		<i className='fa fa-angle-left fa-3x' aria-hidden='true'></i>
-	</div>
+		<div className='arrow' onClick={onClick}>
+			<i className='fa fa-angle-left fa-3x' aria-hidden='true'></i>
+		</div>
 	)
 }
 

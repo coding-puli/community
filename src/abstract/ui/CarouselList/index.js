@@ -50,18 +50,6 @@ function RightArrow(props){
 	)
 }
 
-function Slide(props){
-	const {contents, startIndex, renderData, pageSize} = props;
-
-	const ui = contents.map((content, index)=>{
-		const shouldShow = (index >  startIndex - 1) &&  (index < (startIndex + pageSize))
-		return renderData(content, shouldShow);
-	});
-
-	return(
-	{ui}
-	)
-}
 
 export default function CarouselList(props){
 	const {contents, renderData, pageSize} = props;

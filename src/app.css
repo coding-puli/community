@@ -1,6 +1,6 @@
 html, body  {
   margin: 0;
-  background: var(--primary-bg-color);
+  background: var(--primary-bg-color-gradient);
 }
 
 /* To create fixed header*/
@@ -24,7 +24,9 @@ html, body  {
   font-family: var(--header-font-family);
   padding: var(--element-padding);
   display: flex;
-  min-height: var(--header-height)
+  height: var(--header-height);
+  align-items: center;
+  z-index: 2;
 }
 
 .header-sticky {
@@ -38,10 +40,20 @@ html, body  {
   margin-left: 24px;
 }
 
+.intro {
+  background: linear-gradient(90deg, rgba(27,121,17,1) 0%, rgba(44,128,59,1) 29%, rgba(244,246,200,1) 100%);
+  /*border: 24px solid transparent;
+  border-image: url("static/img/borderImage.png") 30 round;*/
+  border: 32px solid;
+  border-image: linear-gradient(45deg, rgb(0,143,104), rgb(250,224,66)) 1;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding-top: 60px;
+}
+
 
 .logo{
-  height: 150px;
-  width: 150px;
   display: flex;
   border-radius: 50%;
   align-items: center;
@@ -70,7 +82,7 @@ html, body  {
   font-size: var(--header-font-size);
   font-weight: var(--header-font-weight);
   padding: var(--element-padding);
-  margin: 0 0.45rem;
+  margin: 0 .20rem;
 }
 
 .nav-link-active{
@@ -78,7 +90,7 @@ html, body  {
   font-size: var(--header-font-size-active);
   font-weight: var(--header-font-weight-active);
   padding: var(--element-padding);
-  margin: 0 0.75rem;
+  margin: 0 0.25rem;
   border: 2px none #db6c55;
   border-bottom-style: solid;
 }

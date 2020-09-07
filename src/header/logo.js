@@ -4,19 +4,22 @@ export default function Logo(props){
 	const {url} = props;
 
 	const containerStyle = {
-		position: 'relative'
+		position: 'relative',
+		top: '24px',
+		height: '150px',
+		width: '150px'
 	};
 
-	const logoContainerStyle = {
-		position: 'absolute'
+
+	const logoStyle = {
+		height: '150px',
+		width: '150px'
 	};
 
 	return (
 		<div style={containerStyle}>
-			<div style={logoContainerStyle}>
-				<div className='logo'>
-					<img src={url}/>
-				</div>
+			<div className='logo' style={logoStyle}>
+				<img src={url}/>
 			</div>
 		</div>
 	)
