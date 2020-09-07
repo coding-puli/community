@@ -15,7 +15,6 @@ export default function Header(props){
 		<div className='header header-sticky'>
 			<div style={style}>
 				<Logo url={logoUrl}/>
-				<h2>Website Title</h2>
 			</div>
 			<NavBar links={links}/>
 		</div>

@@ -135,7 +135,7 @@
 }
 
 .event-location{
-  color: #f9e8eb;
+  color: var(--secondary-bg-color);
   font-weight: 400;
   position: relative;
   font-size: 12px;
@@ -148,7 +148,7 @@
 }
 
 .event-url{
-  border: 1px solid #f9e8eb;
+  border: 1px solid var(--secondary-bg-color);
   padding: 16px;
   color: #ffbac7;
   font-weight: 600;

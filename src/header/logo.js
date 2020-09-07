@@ -1,12 +1,24 @@
 import React from 'react';
 
 export default function Logo(props){
-	const {url} = props
+	const {url} = props;
+
+	const containerStyle = {
+		position: 'relative'
+	};
+
+	const logoContainerStyle = {
+		position: 'absolute'
+	};
+
 	return (
-	<div className='logo'>
-		Logo
-		{/*<img src={url}/>*/}
-	</div>
+		<div style={containerStyle}>
+			<div style={logoContainerStyle}>
+				<div className='logo'>
+					<img src={url}/>
+				</div>
+			</div>
+		</div>
 	)
 }
 

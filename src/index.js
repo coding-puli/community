@@ -3,19 +3,20 @@ import ReactDOM from 'react-dom';
 import {BrowserRouter} from 'react-router-dom';
 
 import App from './app';
-import './app.css';
 
 
 
 function AsianAssociationWebsite(props){
 	return (
-		<div className='app'>
-			<BrowserRouter>
-				<App/>
-			</BrowserRouter>
-		</div>
+	<BrowserRouter>
+		<App/>
+	</BrowserRouter>
 	)
 }
 
+// spa
 ReactDOM.render(<AsianAssociationWebsite/>, document.getElementById('app'));
+
+// static
+
 
