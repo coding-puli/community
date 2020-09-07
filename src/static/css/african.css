@@ -39,6 +39,8 @@ Color theme Palette 2
 :root {
   --primary-bg-color: #77958d;
   --secondary-bg-color: #f9e8eb;
+  --tertiary-bg-color: #ff851a;
+  --default-bg-color: white;
 
   --primary-text-color: #1f4e51;
   --primary-text-color-inactive: #75958d;
@@ -62,4 +64,6 @@ Color theme Palette 2
 
   --conatainer-margin: 4px 4px 4px 4px;
   --element-margin: 2px 2px 2px 2 px;
+
+  --header-height: 100px;
 }

@@ -19,11 +19,12 @@ html, body  {
   z-index: 1; /* this is optional and should be different for every project */
 }
 
+
 .header {
   font-family: var(--header-font-family);
   padding: var(--element-padding);
   display: flex;
-  min-height: 100px;
+  min-height: var(--header-height)
 }
 
 .header-sticky {
