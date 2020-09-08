@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import FixedImageContainer from 'abstract/ui/FixedImage/FixedImageContainer'
 import Carousel from 'abstract/ui/carousel';
 import CarouselList from 'abstract/ui/CarouselList';
 import './style.css';
@@ -13,19 +12,19 @@ import './style.css';
 const carouselData = [
 	{
 		title: 'About us',
-		description: 'About us description About us description About us description',
+		description: 'About us description About us description About us description About us description About us description About us description About us description About us description About us description',
 		image: ['static/img/map.png','static/img/community1.jpg','static/img/community2.jpg','static/img/community3.jpg' ],
 		button: 'Join Us'
 	},
 	{
 		title: 'Projects',
-		description: 'Projects description Projects description Projects description',
+		description: 'Projects description Projects description Projects description Projects description Projects description Projects description Projects description Projects description Projects description Projects description Projects description Projects description',
 		image: ['static/img/sitting.png','static/img/community2.jpg','static/img/community3.jpg','static/img/community1.jpg' ],
 		button: 'Add Project'
 	},
 	{
 		title: 'Activity',
-		description: 'Activity description Activity description Activity description',
+		description: 'Activity description Activity description Activity description Activity description Activity description Activity description',
 		image: ['static/img/drums1.png','static/img/community3.jpg','static/img/community2.jpg','static/img/community1.jpg' ],
 		button: 'Visit Activity'
 	}
@@ -113,17 +112,12 @@ export default function Home(props){
 			return null;
 		}
 
-		const style = {
-			width:"400px",
-			position: 'relative'
-		};
-
 		const mainImageUrl = Array.isArray(image) ? image[0] : image;
 		let imagesUI = [];
 		for(let i = 1; i< image.length; i++){
 			const imageUrl = image[i];
 			const imgStyle = {
-				width:"400px"
+				width:"360px"
 			};
 			imagesUI.push((
 				<div className={`image-stack-item-${i}`} >
@@ -138,7 +132,7 @@ export default function Home(props){
 					<div className='active-slide-images-stack'>
 						{imagesUI}
 					</div>
-					<div>{title}</div>
+					{/*<div>{title}</div>*/}
 					<div>{description}</div>
 					<button> {button}</button>
 				</div>

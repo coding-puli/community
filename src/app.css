@@ -1,6 +1,6 @@
 html, body  {
   margin: 0;
-  background: var(--primary-bg-color-gradient);
+  background: var(--secondary-bg-color);
 }
 
 /* To create fixed header*/
@@ -32,9 +32,6 @@ html, body  {
   margin-left: 24px;
 }
 
-
-
-
 .logo{
   display: flex;
   border-radius: 50%;
@@ -45,8 +42,7 @@ html, body  {
 }
 
 .logo img{
-  width: 140px;
-  height: 140px;
+  width: 64px;
 }
 
 /* Navbar */
@@ -94,16 +90,16 @@ html, body  {
   background: var(--secondary-bg-color);
 
   font-family: var(--secondary-font-family);
-  color: var(--secondary-text-color);
+  color: var(--default-text-color);
   letter-spacing: 1px;
 }
 
 
 .intro {
-  background: linear-gradient(90deg, rgba(27,121,17,1) 0%, rgba(44,128,59,1) 29%, rgba(244,246,200,1) 100%);
+  background: var(--primary-bg-color-gradient);
   /*border: 24px solid transparent;
   border-image: url("static/img/borderImage.png") 30 round;*/
- /* border-radius: 100%/0 0 800px 10px;*/
+  border-radius: 100% 0 800px 20px;
   display: flex;
   justify-content: center;
   height: inherit;
@@ -127,7 +123,7 @@ html, body  {
 }
 
 .partner-show img {
-  box-shadow: -10px 10px #3e8c06;
+  box-shadow: -10px 10px var(--secondary-text-color);
 }
 
 .footer {
@@ -146,6 +142,11 @@ html, body  {
 
 .contact{
   text-align: center;
+}
+
+.arrow {
+  cursor: pointer;
+  color: var(--secondary-text-color);
 }
 
 .tree-map {

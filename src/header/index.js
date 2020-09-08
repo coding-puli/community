@@ -7,7 +7,9 @@ export default function Header(props){
 
 
 	const style = {
-		display: 'flex'
+		display: 'flex',
+		marginRight: '16px',
+		marginLeft: '32px'
 	};
 
 	const wordStyle = {
@@ -20,7 +22,7 @@ export default function Header(props){
 				<Logo url={logoUrl}/>
 			</div>
 			<div>
-				<h2 style={wordStyle}>Afro Caribbean Community Association</h2>
+				<h3 style={wordStyle}>Afro Caribbean Community Association</h3>
 			</div>
 			<NavBar links={links}/>
 		</div>

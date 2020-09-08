@@ -4,8 +4,7 @@ export default function Logo(props){
 	const {url} = props;
 
 	const containerStyle = {
-		position: 'relative',
-		top: '24px'
+		position: 'relative'
 	};
 
 	return (
