@@ -19,6 +19,21 @@ const AppDiv = styled('div').attrs(() => ({
 `;
 AppDiv.displayName = 'AppDiv';
 
+const StyledHeader = styled('header').attrs(() => ({
+	className: 'app-header'
+}))`
+  height: 16vh;
+`;
+StyledHeader.displayName = 'StyledHeader';
+
+const StyledSection = styled('section').attrs(() => ({
+	className: 'app-view-area'
+}))`
+  height: 84vh;
+  overflow: auto;
+`;
+StyledSection.displayName = 'StyledSection';
+
 
 export default function App(props){
 	const location = useLocation();
@@ -26,14 +41,15 @@ export default function App(props){
 
 	return (
 	<AppDiv>
+		<StyledHeader>
 			<Header links={pageLinks}
 							isSticky={isSticky}
 							element={element}
 							logoUrl="static/img/logo.png"/>
-			{/*<RouterBreadCrumb pathname={location.pathname} startingIndex={2}/>*/}
-			<div className='app-view-area' >
-				<Routes links={pageLinks}/>
-			</div>
+		</StyledHeader>
+		<StyledSection>
+			<Routes links={pageLinks}/>
+		</StyledSection>
 	</AppDiv>
 	)
 }

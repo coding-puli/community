@@ -14,19 +14,19 @@ const carouselData = [
 	{
 		title: 'About us',
 		description: 'About us description About us description About us description',
-		image: 'static/img/community1.jpg',
+		image: ['static/img/map.png','static/img/community1.jpg','static/img/community2.jpg','static/img/community3.jpg' ],
 		button: 'Join Us'
 	},
 	{
 		title: 'Projects',
 		description: 'Projects description Projects description Projects description',
-		image: 'static/img/community2.jpg',
+		image: ['static/img/sitting.png','static/img/community2.jpg','static/img/community3.jpg','static/img/community1.jpg' ],
 		button: 'Add Project'
 	},
 	{
 		title: 'Activity',
 		description: 'Activity description Activity description Activity description',
-		image: 'static/img/community3.jpg',
+		image: ['static/img/drums1.png','static/img/community3.jpg','static/img/community2.jpg','static/img/community1.jpg' ],
 		button: 'Visit Activity'
 	}
 ];
@@ -108,23 +108,42 @@ export default function Home(props){
 
 	function renderDataIterator(data, isActive){
 		const {title, description, image, button} = data;
+
 		if(!isActive){
 			return null;
 		}
 
 		const style = {
-			width:"400px"
+			width:"400px",
+			position: 'relative'
 		};
+
+		const mainImageUrl = Array.isArray(image) ? image[0] : image;
+		let imagesUI = [];
+		for(let i = 1; i< image.length; i++){
+			const imageUrl = image[i];
+			const imgStyle = {
+				width:"400px"
+			};
+			imagesUI.push((
+				<div className={`image-stack-item-${i}`} >
+					<img src={imageUrl} style={imgStyle}/>
+				</div>
+			))
+		}
 
 		return (
 			<div key={title} className='active-slide'>
-				<div>
-					<img src={image} style={style}/>
-				</div>
 				<div className='active-slide-content'>
+					<div className='active-slide-images-stack'>
+						{imagesUI}
+					</div>
 					<div>{title}</div>
 					<div>{description}</div>
 					<button> {button}</button>
+				</div>
+				<div>
+					<img className='active-slide-main-image' src={mainImageUrl}/>
 				</div>
 			</div>
 		)
@@ -151,9 +170,6 @@ export default function Home(props){
 		<div className='home'>
 			<div className='intro'>
 				<Carousel contents={carouselData} renderData={renderDataIterator}/>
-				<div className='intro-image'>
-					<img src='static/img/map.png' height="480px"/>
-				</div>
 			</div>
 			<div className='partners'>
 				<CarouselList contents={partnersData} renderData={renderPartnerIterator} pageSize={3}/>

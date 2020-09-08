@@ -42,17 +42,17 @@ Color theme Palette 2
 :root {
   --primary-bg-color-gradient: linear-gradient(90deg, rgba(27,121,17,1) 0%, rgba(44,128,59,1) 29%, rgba(244,246,200,1) 100%);
   --primary-bg-color: #77958d;
-  --secondary-bg-color: #d6efc7;
+  --secondary-bg-color: #f9e8eb;
   --tertiary-bg-color: #ff851a;
   --default-bg-color: white;
 
-  --primary-text-color: #c05243;
-  --primary-text-color-inactive: #9a675c;
+  --primary-text-color: #1f4e51;
+  --primary-text-color-inactive: #3e8c06;
   --secondary-text-color: #d7d7db;
 
-  --title-font-size: 24px;
-  --header-font-size: 14px;
-  --header-font-size-active: 18px;
+  --title-font-size: 18px;
+  --header-font-size: 22px;
+  --header-font-size-active: 24px;
   --scondary-font-size: 14px;
 
   --header-font-weight: 800;
@@ -64,7 +64,8 @@ Color theme Palette 2
   --secondary-font-family: sans-serif;
 
   --container-padding: 12px 12px 12px 12px;
-  --element-padding: 6px 12px 6px 12px;
+  --link-padding: 6px 12px;
+  --element-padding: 19px 44px;
 
   --conatainer-margin: 4px 4px 4px 4px;
   --element-margin: 2px 2px 2px 2 px;

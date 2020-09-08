@@ -15,7 +15,7 @@ export default function Header(props){
 	}
 
 	return (
-		<div className='header header-sticky'>
+		<div className='header'>
 			<div style={style}>
 				<Logo url={logoUrl}/>
 			</div>

@@ -1,30 +1,4 @@
-.home {
-  color: var(--secondary-text-color);
-  display: flex;
-  letter-spacing: 1px;
-  font-family: var(--secondary-font-family);
-  flex-direction: column;
-  align-items: center;
-  background: var(--secondary-bg-color);
-}
 
-.partners {
-  background: var(--secondary-bg-color);
-  width: 100%;
-  margin-top: 50px;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
-
-.partner-show {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 250px;
-  height: 200px;
-  margin: 0px 32px;
-}
 
 .slider {
   margin-left: 32px;
@@ -38,15 +12,56 @@
    text-align: center;
    margin-left: 60px;
    margin-right: 60px;
-  flex-direction: column;
 }
 
-.active-slide img{
-  margin-bottom: 60px;
-}
-
-.intro-image {
+.active-slide-main-image{
   position: relative;
+  width: 440px;
+  margin-left: 60px;
+  z-index: 3;
+}
+
+.active-slide-images-stack{
+  position: relative;
+  margin-bottom: 32px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.active-slide-images-stack img{
+  border-style: solid;
+  border-width: 2px;
+  border-color: #fff;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 20px 70px -10px rgba(10, 32, 70, 0.3);
+  -webkit-transform: perspective(1000px);
+  transform: perspective(1000px);
+  -webkit-transition: -webkit-filter 300ms cubic-bezier(.215, .61, .355, 1);
+  transition: -webkit-filter 300ms cubic-bezier(.215, .61, .355, 1);
+  transition: filter 300ms cubic-bezier(.215, .61, .355, 1);
+  transition: filter 300ms cubic-bezier(.215, .61, .355, 1), -webkit-filter 300ms cubic-bezier(.215, .61, .355, 1);
+  -o-object-fit: cover;
+}
+.image-stack-item-1{
+  grid-column: 1 /  2;
+  grid-row: 1; /* must be on the same row as the other image*/
+  padding-top: 40%;  /*this pushes the image down, and keeps it proportional as it resizes*/
+  padding-left: 60%;  /*this pushes the image down, and keeps it proportional as it resizes*/
+  z-index: 2; /* make this image render on top of the bottom*/
+}
+
+.image-stack-item-2{
+  grid-column: 1 / 4;
+  grid-row: 1; /* make this image be on the same row*/
+  padding-top: 20%;  /*this pushes the image down, and keeps it proportional as it resizes*/
+  z-index: 1; /* make this image render on top of the bottom*/
+}
+
+.image-stack-item-3{
+  grid-column: 1 / 8;
+  grid-row: 1; /* make this image be on the same row*/
+  padding-left: 40%;  /*this pushes the image down, and keeps it proportional as it resizes*/
 }
 
 .active-slide button{
@@ -65,21 +80,3 @@
   align-items: center;
 }
 
-.footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  background: #96bb7c;
-  width: 100%;
-  padding: 24px;
-}
-
-.find-us{
-  text-align: center;
-
-}
-
-.contact{
-  text-align: center;
-}

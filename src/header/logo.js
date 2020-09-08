@@ -5,20 +5,12 @@ export default function Logo(props){
 
 	const containerStyle = {
 		position: 'relative',
-		top: '24px',
-		height: '150px',
-		width: '150px'
-	};
-
-
-	const logoStyle = {
-		height: '150px',
-		width: '150px'
+		top: '24px'
 	};
 
 	return (
 		<div style={containerStyle}>
-			<div className='logo' style={logoStyle}>
+			<div className='logo'>
 				<img src={url}/>
 			</div>
 		</div>

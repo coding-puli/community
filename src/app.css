@@ -13,26 +13,18 @@ html, body  {
 .fixed-img{
 }
 
-.sticky {
-  position: sticky;
-  top: 0;
-  z-index: 1; /* this is optional and should be different for every project */
-}
-
 
 .header {
+  background: var(--secondary-bg-color);
   font-family: var(--header-font-family);
-  padding: var(--element-padding);
+  padding: var(--link-padding);
   display: flex;
   height: var(--header-height);
   align-items: center;
-  z-index: 2;
-}
-
-.header-sticky {
-  background: var(--secondary-bg-color);
-  position: sticky;
-  top: 0;
+  -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  z-index: 4;
 }
 
 .header h2{
@@ -40,17 +32,7 @@ html, body  {
   margin-left: 24px;
 }
 
-.intro {
-  background: linear-gradient(90deg, rgba(27,121,17,1) 0%, rgba(44,128,59,1) 29%, rgba(244,246,200,1) 100%);
-  /*border: 24px solid transparent;
-  border-image: url("static/img/borderImage.png") 30 round;*/
-  border: 32px solid;
-  border-image: linear-gradient(45deg, rgb(0,143,104), rgb(250,224,66)) 1;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  padding-top: 60px;
-}
+
 
 
 .logo{
@@ -65,7 +47,6 @@ html, body  {
 .logo img{
   width: 140px;
   height: 140px;
-  position: absolute;
 }
 
 /* Navbar */
@@ -81,7 +62,7 @@ html, body  {
   color: var(--primary-text-color-inactive);
   font-size: var(--header-font-size);
   font-weight: var(--header-font-weight);
-  padding: var(--element-padding);
+  padding: var(--link-padding);
   margin: 0 .20rem;
 }
 
@@ -89,7 +70,7 @@ html, body  {
   color: var(--primary-text-color);
   font-size: var(--header-font-size-active);
   font-weight: var(--header-font-weight-active);
-  padding: var(--element-padding);
+  padding: var(--link-padding);
   margin: 0 0.25rem;
   border: 2px none #db6c55;
   border-bottom-style: solid;
@@ -105,6 +86,63 @@ html, body  {
   border-bottom-style: solid;
 }
 
+
+.home {
+  display: flex;
+  height: inherit;
+  flex-direction: column;
+  background: var(--secondary-bg-color);
+
+  font-family: var(--secondary-font-family);
+  color: var(--secondary-text-color);
+  letter-spacing: 1px;
+}
+
+
+.intro {
+  background: linear-gradient(90deg, rgba(27,121,17,1) 0%, rgba(44,128,59,1) 29%, rgba(244,246,200,1) 100%);
+  /*border: 24px solid transparent;
+  border-image: url("static/img/borderImage.png") 30 round;*/
+ /* border-radius: 100%/0 0 800px 10px;*/
+  display: flex;
+  justify-content: center;
+  height: inherit;
+}
+
+
+.partners {
+  background: var(--secondary-bg-color);
+  padding: 120px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.partner-show {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 260px;
+  height: 200px;
+  margin: 0px 32px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: #96bb7c;
+  padding: 64px;
+}
+
+.find-us{
+  text-align: center;
+
+}
+
+.contact{
+  text-align: center;
+}
 
 .tree-map {
   display: flex;
