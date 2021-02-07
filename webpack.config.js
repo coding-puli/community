@@ -75,7 +75,12 @@ const baseConfig = {
       'pages': path.resolve(__dirname,'src/pages/'),
       'service': path.resolve(__dirname,'src/service/'),
     }
-  }
+  },
+  devServer: {
+    contentBase: path.join(__dirname, '/src'),
+    compress: true,
+  },
+  devtool: 'inline-source-map'
 };
 
 

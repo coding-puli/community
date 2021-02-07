@@ -120,7 +120,7 @@ export default function Home(props){
 				width:"360px"
 			};
 			imagesUI.push((
-				<div className={`image-stack-item-${i}`} >
+				<div key={i} className={`image-stack-item-${i}`} >
 					<img src={imageUrl} style={imgStyle}/>
 				</div>
 			))

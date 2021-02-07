@@ -33,7 +33,7 @@ const StyledSection = styled('section').attrs(() => ({
 StyledSection.displayName = 'StyledSection';
 
 export default function App(props){
-	const {pathName} = props;
+	const {basePath} = props;
 	const {isSticky, element} = useSticky();
 
 	return (
@@ -45,7 +45,7 @@ export default function App(props){
 							logoUrl="./static/img/logo.png"/>
 		</StyledHeader>
 		<StyledSection>
-			<Routes links={pageLinks} basePath={pathName}/>
+			<Routes links={pageLinks} basePath={basePath}/>
 		</StyledSection>
 	</AppDiv>
 	)
