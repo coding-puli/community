@@ -4,7 +4,7 @@ const path = require("path");
 
 const paths = {
 	context: path.join(__dirname, "./src/"),
-	output: path.join(__dirname, "./dist/"),
+	output: path.join(__dirname, "./dist/community"),
 	entry: {
 		'app':"./index.js",
 	}
@@ -15,6 +15,7 @@ const config = {
 	entry: paths.entry,
 	output: {
 		path: paths.output,
+    publicPath: 'community/',
 		filename: "[name].js"
 	},
 	module: {
