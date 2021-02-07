@@ -1,7 +1,5 @@
 import React from 'react';
-import {useLocation} from 'react-router-dom';
 import Header from './header';
-import RouterBreadCrumb from 'abstract/ui/routerBreadcrumb';
 import Routes from 'abstract/ui/routes';
 import useSticky from 'abstract/hooks/useSticky';
 import {pageLinks} from './pageMetaData';
@@ -36,7 +34,7 @@ StyledSection.displayName = 'StyledSection';
 
 
 export default function App(props){
-	const location = useLocation();
+	const {pathName} = props;
 	const {isSticky, element} = useSticky();
 
 	return (
@@ -48,7 +46,7 @@ export default function App(props){
 							logoUrl="./static/img/logo.png"/>
 		</StyledHeader>
 		<StyledSection>
-			<Routes links={pageLinks}/>
+			<Routes links={pageLinks} basePath={pathName}/>
 		</StyledSection>
 	</AppDiv>
 	)

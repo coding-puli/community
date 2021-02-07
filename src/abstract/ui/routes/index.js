@@ -3,11 +3,12 @@ import {Switch, Route} from 'react-router';
 import DynamicImport from './DynamicImport';
 
 export default function Routes(props){
-	const {links} = props;
+	const {links,basePath} = props;
 	const routeUI = links.map((pageLink, index)=>{
 		const {title, link, importPath} = pageLink;
+		const routePath = basePath + link;
 		return (
-		<Route key={title} exact path={link}>
+		<Route key={title} exact path={routePath}>
 			<DynamicImport path={importPath}/>
 		</Route>
 		)

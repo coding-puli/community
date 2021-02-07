@@ -7,9 +7,10 @@ import App from './app';
 
 
 function AsianAssociationWebsite(props){
+
 	return (
 	<BrowserRouter>
-		<App/>
+		<App pathName={window.location.pathname}/>
 	</BrowserRouter>
 	)
 }
