@@ -3,7 +3,7 @@ var config = {
     "html":{
       "sourceDir": "src",
       "sourceFiles": ["index"],
-      "destinationDir":"dist/community"
+      "destinationDir":"dist"
     },
     "css":{
       "sourceDir":null,
@@ -18,7 +18,7 @@ var config = {
     "other":{
       "sourceDir":'src/static',
       "sourceFiles": null,
-      "destinationDir":'dist/community/static'
+      "destinationDir":'dist/static'
     }
   }
 };

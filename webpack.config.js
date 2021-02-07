@@ -4,18 +4,20 @@ const path = require("path");
 
 const paths = {
 	context: path.join(__dirname, "./src/"),
-	output: path.join(__dirname, "./dist/community"),
+	output: path.join(__dirname, "./dist"),
 	entry: {
 		'app':"./index.js",
 	}
 };
+
+const githubProjectName = 'community';
 
 const config = {
 	context: paths.context,
 	entry: paths.entry,
 	output: {
 		path: paths.output,
-    publicPath: 'community/',
+    publicPath:  `/${githubProjectName}/`,
 		filename: "[name].js"
 	},
 	module: {
