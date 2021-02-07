@@ -32,7 +32,6 @@ const StyledSection = styled('section').attrs(() => ({
 `;
 StyledSection.displayName = 'StyledSection';
 
-
 export default function App(props){
 	const {pathName} = props;
 	const {isSticky, element} = useSticky();

@@ -12,7 +12,7 @@ export default function Routes(props){
 			<DynamicImport path={importPath}/>
 		</Route>
 		)
-	})
+	});
 
 	return (
 	<Switch>

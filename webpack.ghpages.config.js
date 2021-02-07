@@ -5,6 +5,6 @@ const config = Object.assign({}, baseConfig);
 
 config.output['publicPath'] = `${githubProjectName}/`;
 
-module.exports = config;
+module.exports = baseConfig;
 
 
