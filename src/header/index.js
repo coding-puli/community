@@ -14,7 +14,7 @@ export default function Header(props){
 
 	const wordStyle = {
 		width: "50px"
-	}
+	};
 
 	return (
 		<div className='header'>
