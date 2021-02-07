@@ -13,19 +13,19 @@ const carouselData = [
 	{
 		title: 'About us',
 		description: 'About us description About us description About us description About us description About us description About us description About us description About us description About us description',
-		image: ['/static/img/map.png','static/img/community1.jpg','static/img/community2.jpg','static/img/community3.jpg' ],
+		image: ['./static/img/map.png','./static/img/community1.jpg','./static/img/community2.jpg','./static/img/community3.jpg' ],
 		button: 'Join Us'
 	},
 	{
 		title: 'Projects',
 		description: 'Projects description Projects description Projects description Projects description Projects description Projects description Projects description Projects description Projects description Projects description Projects description Projects description',
-		image: ['/static/img/sitting.png','static/img/community2.jpg','static/img/community3.jpg','static/img/community1.jpg' ],
+		image: ['./static/img/sitting.png','./static/img/community2.jpg','./static/img/community3.jpg','./static/img/community1.jpg' ],
 		button: 'Add Project'
 	},
 	{
 		title: 'Activity',
 		description: 'Activity description Activity description Activity description Activity description Activity description Activity description',
-		image: ['/static/img/drums1.png','static/img/community3.jpg','static/img/community2.jpg','static/img/community1.jpg' ],
+		image: ['./static/img/drums1.png','./static/img/community3.jpg','./static/img/community2.jpg','./static/img/community1.jpg' ],
 		button: 'Visit Activity'
 	}
 ];
@@ -34,27 +34,27 @@ const partnersData = [
 	{
 		name: 'Partner 1',
 		url: '',
-		image: '/static/img/partners/derby.jpg'
+		image: './static/img/partners/derby.jpg'
 	},
 	{
 		name: 'Partner 2',
 		url: '',
-		image: '/static/img/partners/links.gif'
+		image: './static/img/partners/links.gif'
 	},
 	{
 		name: 'Partner 3',
 		url: '',
-		image: '/static/img/partners/derby.jpg'
+		image: './static/img/partners/derby.jpg'
 	},
 	{
 		name: 'Partner 4',
 		url: '',
-		image: '/static/img/partners/derby.jpg'
+		image: './static/img/partners/derby.jpg'
 	},
 	{
 		name: 'Partner 5',
 		url: '',
-		image: '/static/img/partners/derby.jpg'
+		image: './static/img/partners/derby.jpg'
 	},
 	{
 		name: 'Partner 6',

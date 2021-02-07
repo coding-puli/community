@@ -98,7 +98,7 @@ html, body  {
 .intro {
   background: var(--primary-bg-color-gradient);
   /*border: 24px solid transparent;
-  border-image: url("static/img/borderImage.png") 30 round;*/
+  border-image: url("./static/img/borderImage.png") 30 round;*/
   border-radius: 100% 0 800px 20px;
   display: flex;
   justify-content: center;

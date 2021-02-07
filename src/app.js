@@ -45,7 +45,7 @@ export default function App(props){
 			<Header links={pageLinks}
 							isSticky={isSticky}
 							element={element}
-							logoUrl="static/img/logo.png"/>
+							logoUrl="./static/img/logo.png"/>
 		</StyledHeader>
 		<StyledSection>
 			<Routes links={pageLinks}/>
