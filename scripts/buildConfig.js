@@ -1,7 +1,7 @@
 var config = {
   "copy":{
     "html":{
-      "sourceDir": null,
+      "sourceDir": "src",
       "sourceFiles": ["index"],
       "destinationDir":"dist"
     },
@@ -16,7 +16,7 @@ var config = {
       "destinationDir":null
     },
     "other":{
-      "sourceDir":'static',
+      "sourceDir":'src/static',
       "sourceFiles": null,
       "destinationDir":'dist/static'
     }
