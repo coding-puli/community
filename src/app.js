@@ -45,7 +45,7 @@ export default function App(props){
 							logoUrl="./static/img/logo.png"/>
 		</StyledHeader>
 		<StyledSection>
-			<Routes links={pageLinks} basePath={basePath}/>
+			<Routes links={pageLinks} basePath={basePath}  defaultLink='home'/>
 		</StyledSection>
 	</AppDiv>
 	)

@@ -1,6 +1,6 @@
 .about{
   padding: 32px;
-  color: var(--primary-text-color);
+  color: var(--secondary-text-color);
   display: flex;
   letter-spacing: 1px;
   font-family: 'sans-serif';
