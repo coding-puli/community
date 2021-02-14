@@ -7,23 +7,23 @@
 }
 
 .active-slide {
-   display: flex;
-   align-items: center;
-   text-align: center;
-   margin-left: 60px;
-   margin-right: 60px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 
 .active-slide-main-image{
   position: relative;
   width: 440px;
-  margin-left: 16px;
+  margin-left: 60px;
   z-index: 3;
 }
 
 .active-slide-images-stack{
   position: relative;
-  margin-bottom: 44px;
+  margin-bottom: 32px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
@@ -41,15 +41,14 @@
   transition: -webkit-filter 300ms cubic-bezier(.215, .61, .355, 1);
   transition: filter 300ms cubic-bezier(.215, .61, .355, 1);
   transition: filter 300ms cubic-bezier(.215, .61, .355, 1), -webkit-filter 300ms cubic-bezier(.215, .61, .355, 1);
+  -o-object-fit: cover;
 }
-
 .image-stack-item-1{
   grid-column: 1 /  2;
   grid-row: 1; /* must be on the same row as the other image*/
-  padding-top: 20%;  /*this pushes the image down, and keeps it proportional as it resizes*/
-  padding-left: 40%;  /*this pushes the image down, and keeps it proportional as it resizes*/
+  padding-top: 40%;  /*this pushes the image down, and keeps it proportional as it resizes*/
+  padding-left: 60%;  /*this pushes the image down, and keeps it proportional as it resizes*/
   z-index: 2; /* make this image render on top of the bottom*/
-  transform: rotate(-8deg);
 }
 
 .image-stack-item-2{
@@ -62,13 +61,13 @@
 .image-stack-item-3{
   grid-column: 1 / 8;
   grid-row: 1; /* make this image be on the same row*/
-  padding-left: 20%;  /*this pushes the image down, and keeps it proportional as it resizes*/
+  padding-left: 40%;  /*this pushes the image down, and keeps it proportional as it resizes*/
 }
 
 .active-slide button{
-  margin-top: 32px;
+  margin-top: 60px;
   border: 1px solid white;
-  border-radius: 8px;
+  border-radius: 4px;
   padding: var(--element-padding);
   background: var(--tertiary-bg-color);
   color: white;
@@ -80,4 +79,3 @@
   flex-direction: column;
   align-items: center;
 }
-
