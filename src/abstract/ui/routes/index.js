@@ -17,7 +17,7 @@ export default function Routes(props){
 	const defaultPath = basePath + defaultLink;
 	return (
 	<Switch>
-    <Route exact path="/" render={() => {
+    <Route exact path={basePath} render={() => {
       return (<Redirect to={defaultPath} />)
     }}/>
 		{routeUI}
