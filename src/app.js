@@ -2,11 +2,10 @@ import React from 'react';
 import Header from './header';
 import Routes from 'abstract/ui/routes';
 import useSticky from 'abstract/hooks/useSticky';
+import useDynamicCSSImport from 'abstract/hooks/useDynamicCSSImport';
 import {pageLinks} from './pageMetaData';
 import './app.css';
 import styled from "styled-components";
-
-
 
 const AppDiv = styled('div').attrs(() => ({
 	className: 'app'
@@ -34,7 +33,13 @@ StyledSection.displayName = 'StyledSection';
 
 export default function App(props){
 	const {basePath} = props;
+
+  const [cssStyles, setCssStyles] = useDynamicCSSImport('african');
 	const {isSticky, element} = useSticky();
+
+	if(!cssStyles){
+	  return null;
+  }
 
 	return (
 	<AppDiv>
@@ -43,6 +48,7 @@ export default function App(props){
 							isSticky={isSticky}
 							element={element}
 							logoUrl="./static/img/logo.png"/>
+
 		</StyledHeader>
 		<StyledSection>
 			<Routes links={pageLinks} basePath={basePath}  defaultLink='home'/>
@@ -50,5 +56,3 @@ export default function App(props){
 	</AppDiv>
 	)
 }
-
-

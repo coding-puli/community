@@ -5,7 +5,8 @@ export default function Logo(props){
 
   const containerStyle = {
     position: 'relative',
-    top: '24px'
+    top: '16px',
+    marginLeft: '16px'
   };
 
   return (

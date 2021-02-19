@@ -11,6 +11,7 @@ html, body  {
 }
 
 .fixed-img{
+
 }
 
 
@@ -32,12 +33,10 @@ html, body  {
   margin-left: 24px;
 }
 
-
-
-
 .logo{
   display: flex;
   border-radius: 50%;
+  padding-bottom: 4px;
   align-items: center;
   justify-content: center;
   background: var(--secondary-bg-color);
@@ -45,8 +44,7 @@ html, body  {
 }
 
 .logo img{
-  width: 140px;
-  height: 140px;
+  width: 120px;
 }
 
 /* Navbar */
@@ -100,7 +98,7 @@ html, body  {
 
 
 .intro {
-  background: linear-gradient(90deg, rgba(27,121,17,1) 0%, rgba(44,128,59,1) 29%, rgba(244,246,200,1) 100%);
+  background: var(--primary-bg-color-gradient);
   /*border: 24px solid transparent;
   border-image: url("static/img/borderImage.png") 30 round;*/
   /* border-radius: 100%/0 0 800px 10px;*/
@@ -150,16 +148,3 @@ html, body  {
   justify-content: center;
 }
 
-/* Router Bread crumbs */
-.route-breadcrumps {
-  font-weight: 400 !important;
-  font-size: 20px;
-}
-
-.route-breadcrumps-item {
-  color:  #006298;
-}
-
-.route-breadcrump-active {
-  color: #3f3f3f !important;
-}

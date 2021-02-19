@@ -20,7 +20,7 @@ export default function Header(props){
       <Logo url={logoUrl}/>
     </div>
     <div>
-      <h2 style={wordStyle}>Afro Caribbean Community Association</h2>
+      <h2 style={wordStyle}>African Caribbean Community Association</h2>
     </div>
     <NavBar links={links}/>
   </div>
