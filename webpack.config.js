@@ -27,7 +27,20 @@ const baseConfig = {
       },
       {
         test: /\.css$/,
+        exclude: /\.lazy\.css$/i,
         use: ['style-loader', 'css-loader']
+      },
+      {
+        test: /\.lazy\.css$/i,
+        use: [
+          {
+            loader: 'style-loader',
+            options: {
+              injectType: 'lazyStyleTag'
+            }
+          },
+          'css-loader',
+        ],
       },
       {
         test: /\.csv$/,
@@ -70,6 +83,7 @@ const baseConfig = {
       'components': path.resolve(__dirname,'src/components/'),
       'ui': path.resolve(__dirname,'src/ui/'),
       'context': path.resolve(__dirname,'src/context/'),
+      'theme': path.resolve(__dirname,'src/theme/'),
       'static': path.resolve(__dirname,'src/static/'),
       'abstract': path.resolve(__dirname,'src/abstract/'),
       'pages': path.resolve(__dirname,'src/pages/'),

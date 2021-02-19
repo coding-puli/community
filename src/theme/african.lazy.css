@@ -16,21 +16,21 @@ Color theme Palette 2
   font-family: "south afirkas 2100";
   font-style: normal;
   font-weight: normal;
-  src: url('./../fonts/southafirkas2100.ttf') format("truetype")
+  src: url('../static/fonts/southafirkas2100.ttf') format("truetype")
 }
 
 @font-face {
   font-family: "OutOfAfrica";
   font-style: normal;
   font-weight: normal;
-  src: url('./../fonts/OutOfAfrica.ttf') format("truetype")
+  src: url('../static/fonts/OutOfAfrica.ttf') format("truetype")
 }
 
 @font-face {
   font-family: "TajamukaScript";
   font-style: normal;
   font-weight: normal;
-  src: url('./../fonts/TajamukaScript.ttf') format("truetype")
+  src: url('../static/fonts/TajamukaScript.ttf') format("truetype")
 }
 
 /*
@@ -38,33 +38,41 @@ Color theme Palette 2
   */
 
 :root {
+  /* bg-color-gradient*/
   --primary-bg-color-gradient: linear-gradient(90deg, rgba(27,121,17,1) 0%, rgba(44,128,59,1) 29%, rgba(244,246,200,1) 100%);
+  /* bg-color */
   --primary-bg-color: #77958d;
   --secondary-bg-color: #f9e8eb;
   --tertiary-bg-color: #ff851a;
   --default-bg-color: white;
 
+  /* text-color */
   --primary-text-color: #1f4e51;
   --primary-text-color-inactive: #3e8c06;
   --secondary-text-color: #d7d7db;
 
+  /* font-size */
   --title-font-size: 18px;
   --header-font-size: 22px;
   --header-font-size-active: 24px;
   --scondary-font-size: 14px;
 
+  /* font-weight */
   --header-font-weight: 800;
   --header-font-weight-active: bolder;
   --normal-font-weight: normal;
 
+  /* font-family */
   --header-font-family: "OutOfAfrica";
   --primary-font-family: sans-serif;
   --secondary-font-family: sans-serif;
 
+  /* padding */
   --container-padding: 12px 12px 12px 12px;
   --link-padding: 6px 12px;
   --element-padding: 19px 44px;
 
+  /* margin */
   --conatainer-margin: 4px 4px 4px 4px;
   --element-margin: 2px 2px 2px 2 px;
 
