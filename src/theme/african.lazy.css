@@ -45,6 +45,7 @@ Color theme Palette 2
   --secondary-bg-color: #f9e8eb;
   --tertiary-bg-color: #ff851a;
   --default-bg-color: white;
+  --card-bg-color: rgba(27,121,17,1);
 
   /* text-color */
   --primary-text-color: #1f4e51;

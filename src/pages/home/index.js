@@ -12,21 +12,18 @@ import './style.css';
 const carouselData = [
 	{
 		title: 'About us',
-		description: 'About us description About us description About us description About us description About us description About us description About us description About us description About us description',
+		description: 'The African & Caribbean Community Association (A.C.C.A) is established to promote the welfare of the African and Caribbean Community in Chesterfield and surrounding areas, in particular by providing: Opportunities for African and Caribbean people to meet socially for mutual support to perform in artistic and cultural activities.',
 		image: ['./static/img/map.png','./static/img/community1.jpg','./static/img/community2.jpg','./static/img/community3.jpg' ],
-		button: 'Join Us'
 	},
 	{
 		title: 'Projects',
-		description: 'Projects description Projects description Projects description Projects description Projects description Projects description Projects description Projects description Projects description Projects description Projects description Projects description',
+		description: 'An organisation to educate the community about the culture and history of the African and Caribbean people.',
 		image: ['./static/img/sitting.png','./static/img/community2.jpg','./static/img/community3.jpg','./static/img/community1.jpg' ],
-		button: 'Add Project'
 	},
 	{
 		title: 'Activity',
-		description: 'Activity description Activity description Activity description Activity description Activity description Activity description',
+		description: 'To press for the removal of barriers which deny members of the African and Caribbean community an equal opportunity to participate in society.',
 		image: ['./static/img/drums1.png','./static/img/community3.jpg','./static/img/community2.jpg','./static/img/community1.jpg' ],
-		button: 'Visit Activity'
 	}
 ];
 
@@ -55,52 +52,7 @@ const partnersData = [
 		name: 'Partner 5',
 		url: '',
 		image: './static/img/partners/derby.jpg'
-	},
-	{
-		name: 'Partner 6',
-		url: ''
-	},
-	{
-		name: 'Partner 7',
-		url: ''
-	},
-	{
-		name: 'Partner 8',
-		url: ''
-	},
-	{
-		name: 'Partner 9',
-		url: ''
-	},
-	{
-		name: 'Partner 10',
-		url: ''
-	},
-	{
-		name: 'Partner 11',
-		url: ''
-	},
-	{
-		name: 'Partner 1',
-		url: ''
-	},
-	{
-		name: 'Partner 12',
-		url: ''
-	},
-	{
-		name: 'Partner 13',
-		url: ''
-	},
-	{
-		name: 'Partner 14',
-		url: ''
-	},
-	{
-		name: 'Partner 15',
-		url: ''
 	}
-
 ]
 
 export default function Home(props){
@@ -117,7 +69,7 @@ export default function Home(props){
 		for(let i = 1; i< image.length; i++){
 			const imageUrl = image[i];
 			const imgStyle = {
-				width:"360px"
+				width:"320px"
 			};
 			imagesUI.push((
 				<div key={i} className={`image-stack-item-${i}`} >
@@ -134,7 +86,6 @@ export default function Home(props){
 					</div>
 					{/*<div>{title}</div>*/}
 					<div>{description}</div>
-					<button> {button}</button>
 				</div>
 				<div>
 					<img className='active-slide-main-image' src={mainImageUrl}/>
