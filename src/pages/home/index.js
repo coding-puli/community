@@ -36,7 +36,7 @@ const partnersData = [
 	{
 		name: 'Partner 2',
 		url: '',
-		image: './static/img/partners/links.gif'
+		image: './static/img/partners/Links.gif'
 	},
 	{
 		name: 'Partner 3',
