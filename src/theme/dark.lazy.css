@@ -1,0 +1,61 @@
+/*
+Color theme Palette 1
+#8e7176
+#e8b238
+#ecabb6
+#89241e
+Color theme Palette 2
+#6f968D
+#07494D
+#D5949E
+#e9634d
+*/
+
+
+/*
+--primary-bg-color-gradient: linear-gradient(90deg, rgb(62, 141, 92) 0%, rgb(30, 140, 78) 29%, rgba(244,246,200,1) 100%);
+  */
+
+:root {
+  /* bg-color-gradient*/
+  --primary-bg-color-gradient: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(17, 53, 20) 29%, rgb(105, 107, 85) 100%);
+  /* bg-color */
+  --primary-bg-color: #263a32;
+  --secondary-bg-color: #292727;
+  --tertiary-bg-color: #934912;
+  --default-bg-color: #a8a8a8;
+  --card-bg-color: rgb(21, 70, 17);
+  --footer-bg-color: #292727;
+
+  /* text-color */
+  --primary-text-color: #e9e8ef;
+  --primary-text-color-inactive: #6f726f;
+  --secondary-text-color: #eaeaee;
+
+  /* font-size */
+  --title-font-size: 18px;
+  --header-font-size: 22px;
+  --header-font-size-active: 24px;
+  --scondary-font-size: 14px;
+
+  /* font-weight */
+  --header-font-weight: 800;
+  --header-font-weight-active: bolder;
+  --normal-font-weight: normal;
+
+  /* font-family */
+  --header-font-family: times;
+  --primary-font-family: times;
+  --secondary-font-family: times;
+
+  /* padding */
+  --container-padding: 12px 12px 12px 12px;
+  --link-padding: 6px 12px;
+  --element-padding: 19px 44px;
+
+  /* margin */
+  --conatainer-margin: 4px 4px 4px 4px;
+  --element-margin: 2px 2px 2px 2 px;
+
+  --header-height: 100px;
+}

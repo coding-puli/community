@@ -31,10 +31,18 @@ const StyledSection = styled('section').attrs(() => ({
 `;
 StyledSection.displayName = 'StyledSection';
 
+function getUrlParameter(name) {
+  name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+  var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+  var results = regex.exec(location.search);
+  return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+};
+
 export default function App(props){
 	const {basePath} = props;
-
-  const [cssStyles, setCssStyles] = useDynamicCSSImport('african');
+  let themeName = getUrlParameter('theme');
+  themeName = themeName ? themeName : 'african';
+  const [cssStyles, setCssStyles] = useDynamicCSSImport(themeName);
 	const {isSticky, element} = useSticky();
 
 	if(!cssStyles){

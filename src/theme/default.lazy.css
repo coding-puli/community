@@ -12,27 +12,6 @@ Color theme Palette 2
 */
 
 
-@font-face {
-  font-family: "south afirkas 2100";
-  font-style: normal;
-  font-weight: normal;
-  src: url('../static/fonts/southafirkas2100.ttf') format("truetype")
-}
-
-@font-face {
-  font-family: "OutOfAfrica";
-  font-style: normal;
-  font-weight: normal;
-  src: url('../static/fonts/OutOfAfrica.ttf') format("truetype")
-}
-
-@font-face {
-  font-family: "TajamukaScript";
-  font-style: normal;
-  font-weight: normal;
-  src: url('../static/fonts/TajamukaScript.ttf') format("truetype")
-}
-
 /*
 --primary-bg-color-gradient: linear-gradient(90deg, rgb(62, 141, 92) 0%, rgb(30, 140, 78) 29%, rgba(244,246,200,1) 100%);
   */
@@ -65,9 +44,9 @@ Color theme Palette 2
   --normal-font-weight: normal;
 
   /* font-family */
-  --header-font-family: "TajamukaScript";
-  --primary-font-family: "TajamukaScript";
-  --secondary-font-family: "TajamukaScript";
+  --header-font-family: times;
+  --primary-font-family: times;
+  --secondary-font-family: times;
 
   /* padding */
   --container-padding: 12px 12px 12px 12px;

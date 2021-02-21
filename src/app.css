@@ -131,7 +131,7 @@ html, body  {
   justify-content: center;
   flex-wrap: wrap-reverse;
   color: white;
-  background: #96bb7c;
+  background: var(--footer-bg-color);
   padding: 64px;
 }
 
