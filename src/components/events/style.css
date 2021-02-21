@@ -41,7 +41,7 @@
 }
 
 .event-path {
-  font-size: 13px;
+  font-size: 16px;
   margin: 16px;
   display: flex;
   justify-content: center;
@@ -77,11 +77,14 @@
 .event-date {
   display: flex;
   flex-direction: column;
-  color: #ffbac7;
-  border: 1px solid #ffbac7;
   border-radius: 8px;
   padding: 8px 16px 8px 16px;
   align-items: center;
+
+  border: 1px solid white;
+  background: var(--tertiary-bg-color);
+  color: white;
+  font-size: var(--header-font-size);
 }
 
 .event-date-date{
@@ -115,49 +118,49 @@
   width: 420px;
   display: flex;
   flex-direction: column;
+  padding: 24px 24px 24px 8px;
 }
 
 .event-name{
-  color: #ffbac7;
+  color: var(--primary-text-color);
 }
 
 .event-summary{
-  color: #ffbac7;
+  color: var(--primary-text-color);;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .event-redirect{
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-top: 32px;
+  margin-top: 16px;
 }
 
 .event-location{
-  color: var(--secondary-bg-color);
+  color: var(--primary-text-color);
   font-weight: 400;
   position: relative;
-  font-size: 12px;
+  font-size: 14px;
   display: flex;
 }
 
 .event-location-name{
   font-weight: 800;
-  font-size: 13px;
-}
-
-.event-url{
-  border: 1px solid var(--secondary-bg-color);
-  padding: 16px;
-  color: #ffbac7;
-  font-weight: 600;
+  font-size: 16px;
 }
 
 .event-read-more{
   cursor: pointer;
   text-decoration: none;
-  color: #ffbac7
+
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: var(--element-padding);
+  background: var(--tertiary-bg-color);
+  color: white;
+  font-size: var(--header-font-size);
 }
 
 
@@ -177,7 +180,7 @@
 }
 .location-icon:after {
   content: '';
-  background: #ffbac7;
+  background: var(--tertiary-bg-color);
   width: 20px;
   height: 20px;
   position: absolute;

@@ -52,7 +52,17 @@ const teamData = [
   }
 ];
 
+const paragraphs = [
+  'The African & Caribbean Community Association (A.C.C.A) is established to promote the welfare of the African and Caribbean Community in Chesterfield and surrounding areas, in particular by providing'
+]
 
+const list = [
+'Opportunities for African and Caribbean people to meet socially for mutual support to perform in artistic and cultural activities.',
+'An organisation to educate the community about the culture and history of the African and Caribbean people.',
+'To press for the removal of barriers which deny members of the African and Caribbean community an equal opportunity to participate in society.'
+]
 export {
+  paragraphs,
+  list,
   teamData
 }

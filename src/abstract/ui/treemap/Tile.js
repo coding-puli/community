@@ -15,18 +15,32 @@ export default function TreeNode(props){
 	// 2. Background color values
 	const colorValue = colorScale(name);
 
+	const tileStyle = {
+    position: 'absolute',
+    left: xPos,
+    top: yPos,
+    width: nodeWidth,
+    height: nodeHeight,
+    padding:'16px'
+  };
+
+	const tileRelativeContainerStyle = {
+    position: 'relative',
+  };
+
 	const nodeStyle = {
 		position: 'absolute',
 		display: 'flex',
-		left: xPos,
-		top: yPos,
+		left: '8px',
+		top: '8px',
 		backgroundColor: !imageGetter ? colorValue : 'none',
-		width: nodeWidth,
-		height: nodeHeight,
+		width: nodeWidth-16,
+		height: nodeHeight-16,
 		zIndex: !imageGetter ? 1 : 2,
 		cursor: 'pointer',
 
 	};
+
 	let imageUI = null;
 	if(imageGetter){
 		const imageURL = imageGetter(data);
@@ -34,23 +48,24 @@ export default function TreeNode(props){
 			const imgStyle =  {
 				position: 'absolute',
 				display: 'flex',
-				left: xPos,
-				top: yPos,
-				width: nodeWidth,
-				height: nodeHeight,
+        left: '8px',
+        top: '8px',
+				width: nodeWidth-16,
+				height: nodeHeight-16,
 				objectFit: 'cover'
 			};
 
 			const overlayStyle =  {
 				position: 'absolute',
-				left: xPos,
-				top: yPos,
-				width: nodeWidth,
-				height: nodeHeight,
+        left: '8px',
+        top: '8px',
+				width: nodeWidth-16,
+				height: nodeHeight-16,
 				background: '#627d75',
 				opacity: isActive ? '35%' : '80%',
 				cursor: 'pointer',
-				zIndex: 1
+				zIndex: 1,
+        border: '1px solid white'
 			};
 
 			imageUI = [
@@ -71,12 +86,16 @@ export default function TreeNode(props){
 		alignSelf: 'flex-end'
 	};
 
-	return <>
-		<div key='tile' style={nodeStyle} onClick={onClick}>
-			<div style={nodeContentStyle} >
-				{ showLabel ? <label style={labelStyle}>{name}</label> : null}
-			</div>
-		</div>
-		{imageUI}
-	</>;
+	return (
+    <div style={tileStyle}>
+      <div style={tileRelativeContainerStyle}>
+        <div key='tile'  style={nodeStyle} onClick={onClick}>
+          <div style={nodeContentStyle} >
+            { showLabel ? <label style={labelStyle}>{name}</label> : null}
+          </div>
+        </div>
+        {imageUI}
+      </div>
+    </div>
+  );
 }

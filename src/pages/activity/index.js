@@ -3,7 +3,7 @@ import {ServiceProvider} from 'context/provider';
 import Events from 'components/events';
 
 //todo: write queryBuilder query for facebook events
-const accessToken = `EAAGLgZB5xocIBAL1EBIzKo5y8y8ZBs1IzfKOIEEfQW2TJDJi2hfaaJO86KZAQ57mdefS3n4UsTtvlZBgnIDjUtOqUcB0vDyQvZAL4DBezD9em4b0aSx5w9go8SBPEEG9TinZBsUMxVMnekgKSJEu6tocaT2KjZBlDna4Y4lADWMFxhOxxGbDWr9`;
+const accessToken = `EAAGLgZB5xocIBABnei8kZAZAJfjgMdvAcEDGXDO3V0J4EE5TNCp0frJw9ST6edzUcfyu0LPScGo57lc6hMoR3SpuPGgB60D1A7K8Vd1HgZAbvN13MME4imRZBB8bVeTCo6WEZBLNUePuIrobi0lbZBvpWlPrI96Ydv1wE5aw8gNIwZDZD`;
 const eventsUrl = `https://graph.facebook.com/me?fields=events{attending_count,place,interested_count,photos,category,cover,start_time,end_time,description,name,picture}&access_token=${accessToken}`;
 
 export default function Activity(props){
@@ -12,7 +12,6 @@ export default function Activity(props){
 		<ServiceProvider url={eventsUrl} method="GET" type="events">
 			<Events/>
 		</ServiceProvider>
-
 	</div>
 	)
 }

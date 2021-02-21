@@ -1,37 +1,7 @@
 .contact-page{
-  padding: 8px;
   display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
-
+  padding-top: 128px;
 }
 
-.contact-item{
-  border: 1px solid #602a24;
-  border-radius: 4px;
-  padding: 16px;
-  color: #602a24;
-  width: 300px;
-  margin:16px;
-}
-
-.contact-item-tile{
-
-}
-
-.contact-item-description{
-  font-style: italic;
-}
-
-.contact-item-phone-email{
- display: flex;
-}
-
-.contact-item-phone{
-  margin-right: 16px
-}
-
-.contact-item-email{
-
-}

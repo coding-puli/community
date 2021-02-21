@@ -1,5 +1,5 @@
 .about{
-  padding: 32px;
+  padding: 64px 32px 32px;
   color: var(--secondary-text-color);
   display: flex;
   letter-spacing: 1px;
@@ -8,6 +8,15 @@
 .team-container {
   display: flex;
   flex-wrap: wrap;
+}
+
+.about ul{
+  margin-bottom: 64px;
+}
+
+.about .team {
+  display: flex;
+  flex-direction: column;
 }
 
 

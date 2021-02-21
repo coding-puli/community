@@ -41,7 +41,7 @@ function getUrlParameter(name) {
 export default function App(props){
 	const {basePath} = props;
   let themeName = getUrlParameter('theme');
-  themeName = themeName ? themeName : 'african';
+  themeName = themeName ? themeName : 'default';
   const [cssStyles, setCssStyles] = useDynamicCSSImport(themeName);
 	const {isSticky, element} = useSticky();
 

@@ -48,6 +48,7 @@ export default function Events(props){
 			<div style={relativeStyle}>
 				<TreeMap data={treeData} onTileClick={tileClickHandler}
 								 activeId={eventToRender.id}
+                 showLabel={true}
 								 width={640}
 								 imageGetter={imageGetter}
 								 sumIterator={sumIterator}

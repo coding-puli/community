@@ -12,13 +12,11 @@ Color theme Palette 2
 */
 
 
-
-
 @font-face {
-  font-family: "OutOfAfrica";
+  font-family: "south afirkas 2100";
   font-style: normal;
   font-weight: normal;
-  src: url('../static/fonts/OutOfAfrica.ttf') format("truetype")
+  src: url('../static/fonts/southafirkas2100.ttf') format("truetype")
 }
 
 
@@ -55,9 +53,9 @@ Color theme Palette 2
   --normal-font-weight: normal;
 
   /* font-family */
-  --header-font-family: "OutOfAfrica";
-  --primary-font-family: "OutOfAfrica";
-  --secondary-font-family: "OutOfAfrica";
+  --header-font-family: "south afirkas 2100";
+  --primary-font-family: "south afirkas 2100";
+  --secondary-font-family: "south afirkas 2100";
 
   /* padding */
   --container-padding: 12px 12px 12px 12px;

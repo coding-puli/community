@@ -3,7 +3,8 @@ import {ServiceProvider} from 'context/provider';
 import Albums from 'components/albums';
 
 //todo: write queryBuilder query for facebook events
-const albumsUrl = `https://graph.facebook.com/me?fields=albums{name,link,photos{link,images}}&access_token=EAAGLgZB5xocIBAPRlwI56oZAPblUGhSTWhjFhb0WZB3lQ22Wq4iU5iUIBSNtOPpPsSaA5FsX9lYiJ8Ex0x03DRftQ9D7kONO9hVp3tbHj6tebOnM63wjKcEHay3uBwowjJxYOIBrE7AXExZB1qeKtxhf4f80N6wmCHommKZCi4ZAOhZAw3mBZCccf22SzuBbZAxUZD`
+const token = `EAAGLgZB5xocIBABnei8kZAZAJfjgMdvAcEDGXDO3V0J4EE5TNCp0frJw9ST6edzUcfyu0LPScGo57lc6hMoR3SpuPGgB60D1A7K8Vd1HgZAbvN13MME4imRZBB8bVeTCo6WEZBLNUePuIrobi0lbZBvpWlPrI96Ydv1wE5aw8gNIwZDZD`
+const albumsUrl = `https://graph.facebook.com/me?fields=albums{name,link,photos{link,images}}&access_token=${token}`;
 export default function Gallery(props){
 	return (
 		<div>
