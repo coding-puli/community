@@ -39,7 +39,7 @@ export default function Home(props){
 						{imagesUI}
 					</div>
 					{/*<div>{title}</div>*/}
-					<div>{description}</div>
+					{/*<div>{description}</div>*/}
 				</div>
 				<div>
 					<img className='active-slide-main-image' src={mainImageUrl}/>
