@@ -2,6 +2,7 @@ import React from 'react';
 import {metaData} from './metaData';
 import './style.css';
 
+//todo: implement this https://blog.logrocket.com/a-practical-guide-to-integrating-google-maps-in-react/
 export default function Contact(props){
 	const ui = metaData.map((meta , index)=>{
 		const {title, description, contact} = meta;

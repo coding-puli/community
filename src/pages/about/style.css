@@ -3,7 +3,6 @@
   color: var(--secondary-text-color);
   display: flex;
   letter-spacing: 1px;
-  font-family: 'sans-serif';
 }
 
 .team-container {

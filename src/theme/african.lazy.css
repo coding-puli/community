@@ -64,9 +64,9 @@ Color theme Palette 2
   --normal-font-weight: normal;
 
   /* font-family */
-  --header-font-family: "OutOfAfrica";
-  --primary-font-family: sans-serif;
-  --secondary-font-family: sans-serif;
+  --header-font-family: "TajamukaScript";
+  --primary-font-family: "TajamukaScript";
+  --secondary-font-family: "TajamukaScript";
 
   /* padding */
   --container-padding: 12px 12px 12px 12px;

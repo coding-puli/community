@@ -2,7 +2,8 @@
   position: relative;
   padding-right: 15px;
   padding-left: 15px;
-  min-width: 240px;
+  min-width: 200px;
+  font-family: var(--primary-font-family);
 }
 
 .our-team {
@@ -17,8 +18,8 @@
 
 .our-team .picture {
   display: inline-block;
-  height: 130px;
-  width: 130px;
+  height: 110px;
+  width: 110px;
   margin-bottom: 50px;
   z-index: 1;
   position: relative;

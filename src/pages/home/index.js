@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import Carousel from 'abstract/ui/carousel';
 import CarouselList from 'abstract/ui/CarouselList';
+import {partnersData, carouselData} from "./content";
 import './style.css';
 
 /*
@@ -8,61 +9,14 @@ import './style.css';
     transform: rotate(10deg);
     height: 300px;
  * */
-
-const carouselData = [
-	{
-		title: 'About us',
-		description: 'The African & Caribbean Community Association (A.C.C.A) is established to promote the welfare of the African and Caribbean Community in Chesterfield and surrounding areas, in particular by providing: Opportunities for African and Caribbean people to meet socially for mutual support to perform in artistic and cultural activities.',
-		image: ['./static/img/map.png','./static/img/community1.jpg','./static/img/community2.jpg','./static/img/community3.jpg' ],
-	},
-	{
-		title: 'Projects',
-		description: 'An organisation to educate the community about the culture and history of the African and Caribbean people.',
-		image: ['./static/img/sitting.png','./static/img/community2.jpg','./static/img/community3.jpg','./static/img/community1.jpg' ],
-	},
-	{
-		title: 'Activity',
-		description: 'To press for the removal of barriers which deny members of the African and Caribbean community an equal opportunity to participate in society.',
-		image: ['./static/img/drums1.png','./static/img/community3.jpg','./static/img/community2.jpg','./static/img/community1.jpg' ],
-	}
-];
-
-const partnersData = [
-	{
-		name: 'Partner 1',
-		url: '',
-		image: './static/img/partners/derby.jpg'
-	},
-	{
-		name: 'Partner 2',
-		url: '',
-		image: './static/img/partners/Links.gif'
-	},
-	{
-		name: 'Partner 3',
-		url: '',
-		image: './static/img/partners/derby.jpg'
-	},
-	{
-		name: 'Partner 4',
-		url: '',
-		image: './static/img/partners/derby.jpg'
-	},
-	{
-		name: 'Partner 5',
-		url: '',
-		image: './static/img/partners/derby.jpg'
-	}
-]
-
 export default function Home(props){
 
 	function renderDataIterator(data, isActive){
-		const {title, description, image, button} = data;
-
 		if(!isActive){
 			return null;
 		}
+
+    const {title, description, image, button} = data;
 
 		const mainImageUrl = Array.isArray(image) ? image[0] : image;
 		let imagesUI = [];
@@ -121,12 +75,31 @@ export default function Home(props){
 			</div>
 
 			<div className='footer'>
+        <div className='social-media-list'>
+            <div className='social-media'><a href='#' ><i className="fab fa-facebook"></i></a></div>
+            <div className='social-media'><a href='#' ><i className="fab fa-instagram"></i></a></div>
+            <div className='social-media'><a href='#' > <i className="fab fa-whatsapp"></i></a></div>
+        </div>
 				<div className='find-us'>
-					<div>Unit 2, Penmore Business Centre</div>
-					<div>Saxton Close, Hasland Road</div>
+          <h2>CONTACT US</h2>
+					<div>Unit 2, Penmore Business Centre,</div>
+					<div>Saxton Close,</div>
+					<div>Off Hasland Road,</div>
 					<div>Hasland, Chesterfield</div>
-					<div>Derbyshire - S41 0SJ</div>
+					<div>S41 0SJ</div>
 				</div>
+        <div className='contact-us-list'>
+          <div className='contact-us'>
+            <i className="fas fa-mobile-alt"></i>
+            <div>01246&nbsp;208052</div>
+            <div>07940&nbsp;285534</div>
+            <div>07483&nbsp;415432</div>
+          </div>
+          <div className='contact-us'>
+            <i className="fas fa-envelope-open-text"></i>
+            <div>accachesterfield@gmail.com</div>
+          </div>
+        </div>
 			</div>
 		</div>
 	)
