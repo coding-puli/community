@@ -4,6 +4,7 @@ import {useGetEvents, useGetNearestEvent} from 'context/consumer';
 import EventDescription from "components/events/EventDescription";
 
 export default function Events(props){
+  const {gap} = props;
 	const events = useGetEvents(); // access data from top level through context instead of props
 	const nearestEvent = useGetNearestEvent();
 	const [activeData, setActiveData] = useState(nearestEvent);
@@ -50,6 +51,7 @@ export default function Events(props){
 								 activeId={eventToRender.id}
                  showLabel={true}
 								 width={640}
+                 gap={gap}
 								 imageGetter={imageGetter}
 								 sumIterator={sumIterator}
 								 height={400}/>

@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function TreeNode(props){
-	const { node, xScale, yScale, colorScale, onClick, imageGetter, isActive , showLabel} = props;
+	const { node, xScale, yScale, colorScale, onClick, imageGetter, isActive , showLabel, gap} = props;
 
 	const { x0, y0, x1, y1, data} = node;
 	const {name} = data;
@@ -15,63 +15,71 @@ export default function TreeNode(props){
 	// 2. Background color values
 	const colorValue = colorScale(name);
 
+	const padding = gap !== undefined ?`${gap}px` : gap;
 	const tileStyle = {
     position: 'absolute',
     left: xPos,
     top: yPos,
     width: nodeWidth,
     height: nodeHeight,
-    padding:'16px'
+    padding: padding
   };
+
+
 
 	const tileRelativeContainerStyle = {
     position: 'relative',
   };
 
+	const delta = padding ? `${gap/2}px` : undefined;
+	const width = padding ? nodeWidth-gap : nodeWidth;
+	const height = padding ? nodeHeight-gap : nodeHeight;
+
 	const nodeStyle = {
 		position: 'absolute',
 		display: 'flex',
-		left: '8px',
-		top: '8px',
+		left: delta,
+		top: delta,
 		backgroundColor: !imageGetter ? colorValue : 'none',
-		width: nodeWidth-16,
-		height: nodeHeight-16,
+		width: width,
+		height: height,
 		zIndex: !imageGetter ? 1 : 2,
 		cursor: 'pointer',
-
 	};
 
 	let imageUI = null;
 	if(imageGetter){
 		const imageURL = imageGetter(data);
 		if(imageURL){
+      imageUI = [];
 			const imgStyle =  {
 				position: 'absolute',
 				display: 'flex',
-        left: '8px',
-        top: '8px',
-				width: nodeWidth-16,
-				height: nodeHeight-16,
+        left: delta,
+        top: delta,
+				width: width,
+				height: height,
 				objectFit: 'cover'
 			};
+      imageUI.push(<img key='tile-image' className='tile-image' style={imgStyle} src={imageURL} />);
 
-			const overlayStyle =  {
-				position: 'absolute',
-        left: '8px',
-        top: '8px',
-				width: nodeWidth-16,
-				height: nodeHeight-16,
-				background: '#627d75',
-				opacity: isActive ? '35%' : '80%',
-				cursor: 'pointer',
-				zIndex: 1,
-        border: '1px solid white'
-			};
 
-			imageUI = [
-				<div key='tile-overlay' style={overlayStyle}></div>,
-				<img key='tile-image' style={imgStyle} src={imageURL} />
-			]
+      if(isActive !== undefined){
+        const overlayStyle =  {
+          position: 'absolute',
+          left: delta,
+          top: delta,
+          width: width,
+          height: height,
+          opacity: (isActive)? '0' : '80%',
+          zIndex: 1,
+        };
+
+        imageUI.push(
+          <div key='tile-overlay'  className='tile-overlay' style={overlayStyle}></div>
+        );
+      }
+
 		}
 	}
 

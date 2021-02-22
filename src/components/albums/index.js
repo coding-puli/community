@@ -12,10 +12,9 @@ function excludeAlbums(albums){
 
 	for (let i = 0; i < albums.length; i++){
 		const album = albums[i];
-		if(album.name != 'Profile pictures' && album.name != 'Cover photos'){
+		if(album.name != 'Profile pictures' && album.name != 'Cover photos' && album.name != 'Timeline Photos'){
 			filteredAlbums.push(album);
 		}
-
 	}
 
 
@@ -24,6 +23,7 @@ function excludeAlbums(albums){
 
 }
 export default function Albums(props){
+  const {gap} = props;
 	const albums = useGetAlbums(); // access data from top level through context instead of props
 	const [activeData, setActiveData] = useState(null);
 
@@ -33,7 +33,6 @@ export default function Albums(props){
 	}
 
 	function tileClickHandler(data){
-		console.log(data);
 		setActiveData(data)
 	}
 
@@ -61,8 +60,7 @@ export default function Albums(props){
 			<Album data={activeData} onClick={tileClickHandler}/>
 		)
 	} else {
-		ui = <TreeMap data={treeData} onTileClick={tileClickHandler}
-						 activeId={activeData? activeData.id : 0}
+		ui = <TreeMap gap={gap} data={treeData} onTileClick={tileClickHandler}
 						 width={840}
 						 imageGetter={imageGetter}
 						 sumIterator={sumIterator}

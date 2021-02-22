@@ -8,9 +8,9 @@ const eventsUrl = `https://graph.facebook.com/me?fields=events{attending_count,p
 
 export default function Activity(props){
 	return (
-	<div>
+	<div className='activity-page'>
 		<ServiceProvider url={eventsUrl} method="GET" type="events">
-			<Events/>
+			<Events gap={16}/>
 		</ServiceProvider>
 	</div>
 	)

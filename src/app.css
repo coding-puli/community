@@ -219,4 +219,28 @@ html, body  {
   justify-content: center;
 }
 
+.activity-page .tree-map .tile-overlay{
+  background: var(--card-bg-color);
+  cursor: pointer;
+  border: 2px solid var(--secondary-bg-color);
+}
+
+.activity-page .tree-map .tile-image{
+  border: 2px solid var(--secondary-bg-color);
+}
+
+
+.gallery-page{
+  padding-top: 64px;
+}
+.gallery-page .tree-map .tile-overlay{
+  background: var(--card-bg-color);
+  cursor: pointer;
+  border: 4px solid var(--secondary-bg-color);
+}
+
+.gallery-page .tree-map .tile-image{
+  border: 2px solid var(--secondary-bg-color);
+}
+
 

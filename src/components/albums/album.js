@@ -5,7 +5,6 @@ export default function Album(props) {
 
 	const {data, onClick} = props;
 	const {name, link:albumLink, photos} = data;
-	console.log('Album data',photos.data);
 
 	 let imagesUI = photos.data.map((imageObj, index)=>{
 	 	const {id, images:sizedImages, link} = imageObj;
@@ -22,7 +21,7 @@ export default function Album(props) {
 	<div className='album-container'>
 		<div className='album-path'>
 			<a className='album-link' onClick={() => onClick()}>Albums</a>
-			<span className='album-path-separator'>&gt;</span>
+			<span className='album-path-separator'>&#47;</span>
 			{name}
 		</div>
 		<div className='album'>

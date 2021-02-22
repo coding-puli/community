@@ -7,9 +7,9 @@ const token = `EAAGLgZB5xocIBABnei8kZAZAJfjgMdvAcEDGXDO3V0J4EE5TNCp0frJw9ST6edzU
 const albumsUrl = `https://graph.facebook.com/me?fields=albums{name,link,photos{link,images}}&access_token=${token}`;
 export default function Gallery(props){
 	return (
-		<div>
+		<div className='gallery-page'>
 			<ServiceProvider url={albumsUrl} method="GET" type="albums">
-					<Albums/>
+					<Albums gap={32}/>
 			</ServiceProvider>
 		</div>
 	)
