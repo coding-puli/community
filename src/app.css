@@ -84,6 +84,14 @@ html, body  {
   border-bottom-style: solid;
 }
 
+.slider .arrow {
+  color: var(--tertiary-bg-color);
+}
+
+.list-slider .arrow {
+  color: var(--tertiary-bg-color);
+}
+
 
 .home {
   display: flex;
@@ -196,16 +204,16 @@ html, body  {
   display: flex;
 }
 
-.contact-page .fas{
+.contact-page .fas {
   margin-right: 16px;
 }
 
-.contact-page .fas{
+.contact-page .fas {
   font-size: 84px;
   color: var(--secondary-bg-color);
 }
 
-.contact-page .fab{
+.contact-page .fab {
   font-size: 44px;
   color: var(--secondary-bg-color);
 }
@@ -219,28 +227,31 @@ html, body  {
   justify-content: center;
 }
 
-.activity-page .tree-map .tile-overlay{
+.activity-page .tree-map .tile-overlay {
   background: var(--card-bg-color);
   cursor: pointer;
   border: 2px solid var(--secondary-bg-color);
 }
 
-.activity-page .tree-map .tile-image{
+.activity-page .tree-map .tile-image {
   border: 2px solid var(--secondary-bg-color);
 }
 
 
-.gallery-page{
+.gallery-page {
   padding-top: 64px;
 }
-.gallery-page .tree-map .tile-overlay{
+
+.gallery-page .tree-map .tile-overlay {
   background: var(--card-bg-color);
   cursor: pointer;
   border: 4px solid var(--secondary-bg-color);
 }
 
-.gallery-page .tree-map .tile-image{
+.gallery-page .tree-map .tile-image {
   border: 2px solid var(--secondary-bg-color);
 }
+
+
 
 
