@@ -9,15 +9,13 @@ export default function EventImageLayover(props){
 
 	return (
 	<div className='image-container'>
-		<div className='image-wrapper'>
-			<EventDate className='event-date'
-								 date={date}
-								 day={day}
-								 month={month}
-								 year={year}/>
-			<div className='image-overlay'></div>
-			<img src={url}/>
-		</div>
+    <EventDate className='event-date'
+               date={date}
+               day={day}
+               month={month}
+               year={year}/>
+    {/*<div className='image-overlay'></div>*/}
+    <img src={url}/>
 
 	</div>
 	)

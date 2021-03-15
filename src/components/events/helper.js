@@ -36,7 +36,22 @@ function getFormattedDate(dateAsString){
 	}
 }
 
+function imageGetter(data){
+  const {cover} = data;
+  if(cover) {
+    return cover.source;
+  }
+  return  ''
+}
+
+const sumIterator = (item)=>{
+  const in_count = item['interested_count'] === undefined ? 0 : item['interested_count'];
+  const at_count = item['attending_count'] === undefined ? 0 : item['attending_count'];
+  return in_count + at_count + 1;
+};
 
 export {
-	getFormattedDate
+	getFormattedDate,
+  imageGetter,
+  sumIterator
 }

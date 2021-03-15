@@ -11,7 +11,7 @@ export default function Header(props){
   };
 
   const wordStyle = {
-    width: "50px"
+    width: "260px" // for two fold text
   }
 
   return (
