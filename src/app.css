@@ -30,7 +30,7 @@ html, body  {
 
 .header h2{
   color: var(--primary-text-color);
-  margin-left: 24px;
+  margin-left: 12px;
 }
 
 .logo{

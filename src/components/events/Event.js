@@ -5,8 +5,8 @@ import EventDescription from './EventDescription';
 
 export default function Event(props) {
 
-	const {data, onClick} = props;
-	const {name, cover, start_time, place} = data;
+	const {data} = props;
+	const { cover, start_time} = data;
 
 	let imageUI = null;
 	if (cover) {
@@ -14,14 +14,10 @@ export default function Event(props) {
 	}
 	return (
 	<div className='event-container'>
-		<div className='event-path'>
-			<a className='events-link' onClick={() => onClick()}>Events</a>
-			<span className='event-path-separator'>&gt;</span>
-			{name}
-		</div>
 		<div className='event'>
 			{imageUI}
 			<EventDescription event={data}/>
+
 		</div>
 	</div>)
 }
