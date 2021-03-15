@@ -3,7 +3,7 @@ const teamData = [
   {
     name: 'Ludwig Ramsey',
     title: 'Chairman',
-    image: './static/img/team/Chairman.jpg'
+    image: './static/img/team/chairman.jpg'
   },
   {
     name: 'Denzil Bertie',
