@@ -18,29 +18,24 @@ const carouselData = [
 
 const partnersData = [
   {
-    name: 'Partner 1',
+    name: 'Derbyshire Contabulary',
     url: '',
-    image: './static/img/partners/derby.jpg'
+    image: './static/img/partners/derby-constabulary.png'
   },
   {
-    name: 'Partner 2',
+    name: 'Derbyshire Carers Association',
     url: '',
-    image: './static/img/partners/Links.gif'
+    image: './static/img/partners/derby-carers-association.png'
   },
   {
-    name: 'Partner 3',
+    name: 'Derbyshire County Council',
     url: '',
-    image: './static/img/partners/derby.jpg'
+    image: './static/img/partners/derby-county-council.png'
   },
   {
-    name: 'Partner 4',
+    name: 'Links CVS',
     url: '',
-    image: './static/img/partners/derby.jpg'
-  },
-  {
-    name: 'Partner 5',
-    url: '',
-    image: './static/img/partners/derby.jpg'
+    image: './static/img/partners/links-cvs.png'
   }
 ]
 

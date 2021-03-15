@@ -20,11 +20,11 @@ const teamData = [
     title: 'Treasurer',
     image: './static/img/team/treasurer.jpg'
   },
-  {
+  /*{
     name: 'Rita King',
     title: 'Member',
     image: './static/img/team/executiveMember-RK.jpg'
-  },
+  },*/
   {
     name: 'Beverley Powell',
     title: 'Member',
