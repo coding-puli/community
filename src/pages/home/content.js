@@ -33,7 +33,7 @@ const partnersData = [
     image: './static/img/partners/derby-county-council.png'
   },
   {
-    name: 'Links CVS',
+    name: 'Links Cvs',
     url: '',
     image: './static/img/partners/links-cvs.png'
   }
